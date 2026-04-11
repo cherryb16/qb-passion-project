@@ -1,0 +1,188 @@
+qb_name,draft_year,draft_round,draft_pick,nfl_team,college
+Matt Ryan,2008,1,3,ATL,Boston Col.
+Joe Flacco,2008,1,18,BAL,Delaware
+Brian Brohm,2008,2,56,GNB,Louisville
+Chad Henne,2008,2,57,MIA,Michigan
+Kevin O'Connell,2008,3,94,NWE,San Diego St.
+John David Booty,2008,5,137,MIN,USC
+Dennis Dixon,2008,5,156,PIT,Oregon
+Josh Johnson,2008,5,160,TAM,San Diego
+Erik Ainge,2008,5,162,NYJ,Tennessee
+Colt Brennan,2008,6,186,WAS,Hawaii
+Andre Woodson,2008,6,198,NYG,Kentucky
+Matt Flynn,2008,7,209,GNB,LSU
+Alex Brink,2008,7,223,HOU,Washington St.
+Matthew Stafford,2009,1,1,DET,Georgia
+Mark Sanchez,2009,1,5,NYJ,USC
+Josh Freeman,2009,1,17,TAM,Kansas St.
+Pat White,2009,2,44,MIA,West Virginia
+Stephen McGee,2009,4,101,DAL,Texas A&M
+Rhett Bomar,2009,5,151,NYG,Sam Houston St.
+Nate Davis,2009,5,171,SFO,Ball St.
+Tom Brandstater,2009,6,174,DEN,Fresno St.
+Mike Teel,2009,6,178,SEA,Rutgers
+Keith Null,2009,6,196,STL,West Texas A&M
+Curtis Painter,2009,6,201,IND,Purdue
+Sam Bradford,2010,1,1,STL,Oklahoma
+Tim Tebow,2010,1,25,DEN,Florida
+Jimmy Clausen,2010,2,48,CAR,Notre Dame
+Colt McCoy,2010,3,85,CLE,Texas
+Mike Kafka,2010,4,122,PHI,Northwestern
+John Skelton,2010,5,155,ARI,Fordham
+Jonathan Crompton,2010,5,168,SDG,Tennessee
+Rusty Smith,2010,6,176,TEN,Florida Atlantic
+Dan LeFevour,2010,6,181,CHI,Central Michigan
+Tony Pike,2010,6,204,CAR,Cincinnati
+Levi Brown,2010,7,209,BUF,Troy
+Sean Canfield,2010,7,239,NOR,Oregon St.
+Zac Robinson,2010,7,250,NWE,Oklahoma St.
+Cam Newton,2011,1,1,CAR,Auburn
+Jake Locker,2011,1,8,TEN,Washington
+Blaine Gabbert,2011,1,10,JAX,Missouri
+Christian Ponder,2011,1,12,MIN,Florida St.
+Andy Dalton,2011,2,35,CIN,TCU
+Colin Kaepernick,2011,2,36,SFO,Nevada
+Ryan Mallett,2011,3,74,NWE,Arkansas
+Ricky Stanzi,2011,5,135,KAN,Iowa
+T.J. Yates,2011,5,152,HOU,North Carolina
+Nathan Enderle,2011,5,160,CHI,Idaho
+Tyrod Taylor,2011,6,180,BAL,Virginia Tech
+Greg McElroy,2011,7,208,NYJ,Alabama
+Andrew Luck,2012,1,1,IND,Stanford
+Robert Griffin III,2012,1,2,WAS,Baylor
+Ryan Tannehill,2012,1,8,MIA,Texas A&M
+Brandon Weeden,2012,1,22,CLE,Oklahoma St.
+Brock Osweiler,2012,2,57,DEN,Arizona St.
+Russell Wilson,2012,3,75,SEA,Wisconsin
+Nick Foles,2012,3,88,PHI,Arizona
+Kirk Cousins,2012,4,102,WAS,Michigan St.
+Ryan Lindley,2012,6,185,ARI,San Diego St.
+B.J. Coleman,2012,7,243,GNB,Chattanooga
+Chandler Harnish,2012,7,253,IND,Northern Illinois
+EJ Manuel,2013,1,16,BUF,Florida St.
+Geno Smith,2013,2,39,NYJ,West Virginia
+Mike Glennon,2013,3,73,TAM,North Carolina St.
+Matt Barkley,2013,4,98,PHI,USC
+Ryan Nassib,2013,4,110,NYG,Syracuse
+Tyler Wilson,2013,4,112,OAK,Arkansas
+Landry Jones,2013,4,115,PIT,Oklahoma
+Brad Sorensen,2013,7,221,SDG,Southern Utah
+Zac Dysert,2013,7,234,DEN,Miami (OH)
+B.J. Daniels,2013,7,237,SFO,South Florida
+Sean Renfree,2013,7,249,ATL,Duke
+Blake Bortles,2014,1,3,JAX,Central Florida
+Johnny Manziel,2014,1,22,CLE,Texas A&M
+Teddy Bridgewater,2014,1,32,MIN,Louisville
+Derek Carr,2014,2,36,OAK,Fresno St.
+Jimmy Garoppolo,2014,2,62,NWE,Eastern Illinois
+Logan Thomas,2014,4,120,ARI,Virginia Tech
+Tom Savage,2014,4,135,HOU,Pittsburgh
+Aaron Murray,2014,5,163,KAN,Georgia
+A.J. McCarron,2014,5,164,CIN,Alabama
+Zach Mettenberger,2014,6,178,TEN,LSU
+David Fales,2014,6,183,CHI,San Jose St.
+Keith Wenning,2014,6,194,BAL,Ball St.
+Tajh Boyd,2014,6,213,NYJ,Clemson
+Garrett Gilbert,2014,6,214,STL,SMU
+Jameis Winston,2015,1,1,TAM,Florida St.
+Marcus Mariota,2015,1,2,TEN,Oregon
+Garrett Grayson,2015,3,75,NOR,Colorado St.
+Sean Mannion,2015,3,89,STL,Oregon St.
+Bryce Petty,2015,4,103,NYJ,Baylor
+Brett Hundley,2015,5,147,GNB,UCLA
+Trevor Siemian,2015,7,250,DEN,Northwestern
+Jared Goff,2016,1,1,LAR,California
+Carson Wentz,2016,1,2,PHI,North Dakota St.
+Paxton Lynch,2016,1,26,DEN,Memphis
+Christian Hackenberg,2016,2,51,NYJ,Penn St.
+Jacoby Brissett,2016,3,91,NWE,North Carolina St.
+Cody Kessler,2016,3,93,CLE,USC
+Connor Cook,2016,4,100,OAK,Michigan St.
+Dak Prescott,2016,4,135,DAL,Mississippi St.
+Cardale Jones,2016,4,139,BUF,Ohio St.
+Kevin Hogan,2016,5,162,KAN,Stanford
+Nate Sudfeld,2016,6,187,WAS,Indiana
+Jake Rudock,2016,6,191,DET,Michigan
+Brandon Allen,2016,6,201,JAX,Arkansas
+Jeff Driskel,2016,6,207,SFO,Louisiana Tech
+Brandon Doughty,2016,7,223,MIA,Western Kentucky
+Mitchell Trubisky,2017,1,2,CHI,North Carolina
+Patrick Mahomes,2017,1,10,KAN,Texas Tech
+Deshaun Watson,2017,1,12,HOU,Clemson
+DeShone Kizer,2017,2,52,CLE,Notre Dame
+Davis Webb,2017,3,87,NYG,California
+C.J. Beathard,2017,3,104,SFO,Iowa
+Joshua Dobbs,2017,4,135,PIT,Tennessee
+Nathan Peterman,2017,5,171,BUF,Pittsburgh
+Brad Kaaya,2017,6,215,DET,Miami (FL)
+Chad Kelly,2017,7,253,DEN,Mississippi
+Baker Mayfield,2018,1,1,CLE,Oklahoma
+Sam Darnold,2018,1,3,NYJ,USC
+Josh Allen,2018,1,7,BUF,Wyoming
+Josh Rosen,2018,1,10,ARI,UCLA
+Lamar Jackson,2018,1,32,BAL,Louisville
+Mason Rudolph,2018,3,76,PIT,Oklahoma St.
+Kyle Lauletta,2018,4,108,NYG,Richmond
+Mike White,2018,5,171,DAL,Western Kentucky
+Luke Falk,2018,6,199,TEN,Washington St.
+Tanner Lee,2018,6,203,JAX,Nebraska
+Danny Etling,2018,7,219,NWE,LSU
+Alex McGough,2018,7,220,SEA,Florida International
+Logan Woodside,2018,7,249,CIN,Toledo
+Kyler Murray,2019,1,1,ARI,Oklahoma
+Daniel Jones,2019,1,6,NYG,Duke
+Dwayne Haskins,2019,1,15,WAS,Ohio St.
+Drew Lock,2019,2,42,DEN,Missouri
+Will Grier,2019,3,100,CAR,West Virginia
+Ryan Finley,2019,4,104,CIN,North Carolina St.
+Jarrett Stidham,2019,4,133,NWE,Auburn
+Easton Stick,2019,5,166,LAC,North Dakota St.
+Clayton Thorson,2019,5,167,PHI,Northwestern
+Gardner Minshew II,2019,6,178,JAX,Washington St.
+Trace McSorley,2019,6,197,BAL,Penn St.
+Joe Burrow,2020,1,1,CIN,LSU
+Tua Tagovailoa,2020,1,5,MIA,Alabama
+Justin Herbert,2020,1,6,LAC,Oregon
+Jordan Love,2020,1,26,GNB,Utah St.
+Jalen Hurts,2020,2,53,PHI,Oklahoma
+Jacob Eason,2020,4,122,IND,Washington
+James Morgan,2020,4,125,NYJ,Florida International
+Jake Fromm,2020,5,167,BUF,Georgia
+Jake Luton,2020,6,189,JAX,Oregon St.
+Cole McDonald,2020,7,224,TEN,Hawaii
+Ben DiNucci,2020,7,231,DAL,James Madison
+Tommy Stevens,2020,7,240,NOR,Mississippi St.
+Nate Stanley,2020,7,244,MIN,Iowa
+Trevor Lawrence,2021,1,1,JAX,Clemson
+Zach Wilson,2021,1,2,NYJ,BYU
+Trey Lance,2021,1,3,SFO,North Dakota St.
+Justin Fields,2021,1,11,CHI,Ohio St.
+Mac Jones,2021,1,15,NWE,Alabama
+Kyle Trask,2021,2,64,TAM,Florida
+Kellen Mond,2021,3,66,MIN,Texas A&M
+Davis Mills,2021,3,67,HOU,Stanford
+Ian Book,2021,4,133,NOR,Notre Dame
+Sam Ehlinger,2021,6,218,IND,Texas
+Kenny Pickett,2022,1,20,PIT,Pittsburgh
+Desmond Ridder,2022,3,74,ATL,Cincinnati
+Malik Willis,2022,3,86,TEN,Liberty
+Matt Corral,2022,3,94,CAR,Mississippi
+Bailey Zappe,2022,4,137,NWE,Western Kentucky
+Sam Howell,2022,5,144,WAS,North Carolina
+Chris Oladokun,2022,7,241,PIT,South Dakota St.
+Skylar Thompson,2022,7,247,MIA,Kansas St.
+Brock Purdy,2022,7,262,SFO,Iowa St.
+Bryce Young,2023,1,1,CAR,Alabama
+C.J. Stroud,2023,1,2,HOU,Ohio St.
+Anthony Richardson,2023,1,4,IND,Florida
+Will Levis,2023,2,33,TEN,Kentucky
+Hendon Hooker,2023,3,68,DET,Tennessee
+Jake Haener,2023,4,127,NOR,Fresno St.
+Stetson Bennett,2023,4,128,LAR,Georgia
+Aidan O'Connell,2023,4,135,LVR,Purdue
+Clayton Tune,2023,5,139,ARI,Houston
+Dorian Thompson-Robinson,2023,5,140,CLE,UCLA
+Sean Clifford,2023,5,149,GNB,Penn St.
+Jaren Hall,2023,5,164,MIN,BYU
+Tanner McKee,2023,6,188,PHI,Stanford
+Max Duggan,2023,7,239,LAC,TCU

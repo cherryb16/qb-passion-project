@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda info:*)",
+      "Bash(pyenv versions:*)",
+      "Bash(pip3 show:*)",
+      "Bash(ls data/raw/passing/*.xls)",
+      "Bash(ls data/raw/sportradar*)",
+      "Bash(python3 -c ':*)",
+      "Bash(python3:*)"
+    ]
+  }
+}
