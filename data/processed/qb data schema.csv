@@ -1,0 +1,93 @@
+column_name,file(s),category,description,source
+qb_name,"cohort, model, college",identifier,Player full name,Manual
+draft_year,"cohort, model, college",identifier,Year the player was drafted into the NFL,Pro Football Reference
+draft_round,"cohort, model",identifier,Round in which the player was drafted,Pro Football Reference
+draft_pick,"cohort, model",identifier,Overall pick number in the draft,Pro Football Reference
+nfl_team,"cohort, model",identifier,NFL team that drafted the player (abbreviation),Pro Football Reference
+college,"cohort, model, college",identifier,College the player attended,Pro Football Reference
+nfl_g,"cohort, model",nfl_basic,NFL regular-season games played (first 2 seasons),Pro Football Reference / Sportradar
+nfl_gs,"cohort, model",nfl_basic,NFL regular-season games started (first 2 seasons),Pro Football Reference / Sportradar
+nfl_cmp,cohort,nfl_passing,NFL pass completions,Sportradar / PFF
+nfl_att,cohort,nfl_passing,NFL pass attempts,Sportradar / PFF
+nfl_iay,cohort,nfl_passing,Intended air yards — total air yards on all pass attempts,Sportradar / PFF
+nfl_cay,cohort,nfl_passing,Completed air yards — air yards on completed passes only,Sportradar / PFF
+nfl_yac,cohort,nfl_passing,Yards after catch on completed passes,Sportradar / PFF
+nfl_bats,cohort,nfl_passing,Batted passes at the line of scrimmage,Sportradar / PFF
+nfl_thawy,cohort,nfl_passing,Throw-aways — intentional incompletions thrown out of bounds,Sportradar / PFF
+nfl_spikes,cohort,nfl_passing,Spike plays to stop the clock,Sportradar / PFF
+nfl_drops,cohort,nfl_passing,Receiver drops on catchable passes,Sportradar / PFF
+nfl_badth,cohort,nfl_passing,Bad throws — passes deemed uncatchable / poorly placed,Sportradar / PFF
+nfl_ontgt,cohort,nfl_passing,On-target throws — passes deemed accurate / catchable,Sportradar / PFF
+nfl_bltz,cohort,nfl_passing,Times the QB was blitzed (extra rushers beyond the front four),Sportradar / PFF
+nfl_hrry,cohort,nfl_passing,Times the QB was hurried (forced to throw early by pressure),Sportradar / PFF
+nfl_hits,cohort,nfl_passing,Times the QB was hit while or after throwing,Sportradar / PFF
+nfl_prss,cohort,nfl_passing,Total times pressured (hurries + hits + sacks combined),Sportradar / PFF
+nfl_scrm,cohort,nfl_passing,Scrambles — designed pass plays where the QB ran instead,Sportradar / PFF
+nfl_rpo_plays,cohort,nfl_passing,Run-pass option total plays,Sportradar / PFF
+nfl_rpo_yds,cohort,nfl_passing,Run-pass option total yards,Sportradar / PFF
+nfl_rpo_passatt,cohort,nfl_passing,Run-pass option pass attempts,Sportradar / PFF
+nfl_rpo_passyds,cohort,nfl_passing,Run-pass option passing yards,Sportradar / PFF
+nfl_rpo_rushatt,cohort,nfl_passing,Run-pass option rush attempts,Sportradar / PFF
+nfl_rpo_rushyds,cohort,nfl_passing,Run-pass option rushing yards,Sportradar / PFF
+nfl_pa_passatt,cohort,nfl_passing,Play-action pass attempts,Sportradar / PFF
+nfl_pa_passyds,cohort,nfl_passing,Play-action passing yards,Sportradar / PFF
+nfl_iay_per_att,"cohort, model",nfl_rate,Intended air yards per pass attempt (depth of target),Derived
+nfl_cay_per_cmp,cohort,nfl_rate,Completed air yards per completion,Derived
+nfl_cay_per_att,cohort,nfl_rate,Completed air yards per attempt,Derived
+nfl_yac_per_cmp,cohort,nfl_rate,Yards after catch per completion,Derived
+nfl_drop_pct,cohort,nfl_rate,Drop percentage — drops / pass attempts × 100,Derived
+nfl_badth_pct,"cohort, model",nfl_rate,Bad throw percentage — bad throws / pass attempts × 100,Derived
+nfl_ontgt_pct,"cohort, model",nfl_rate,On-target percentage — on-target throws / pass attempts × 100,Derived
+nfl_pkttime,"cohort, model",nfl_rate,Average time in the pocket before throwing (seconds),Sportradar / PFF
+nfl_prss_pct,"cohort, model",nfl_rate,Pressure rate — times pressured / dropbacks × 100,Derived
+nfl_yds_per_scr,cohort,nfl_rate,Yards per scramble,Derived
+nfl_seasons_found,cohort,nfl_meta,Number of NFL seasons with data found (capped at 2),Data collection
+nfl_seasons,cohort,nfl_meta,"Comma-separated list of NFL seasons included (e.g. ""2020,2021"")",Data collection
+has_advanced_stats,"cohort, model",nfl_meta,Boolean flag — whether advanced passing stats were available,Data collection
+nfl_rush_att,cohort,nfl_rushing,NFL rushing attempts,Sportradar / PFF
+nfl_rush_yds,cohort,nfl_rushing,NFL rushing yards,Sportradar / PFF
+nfl_rush_1d,cohort,nfl_rushing,NFL rushing first downs,Sportradar / PFF
+nfl_rush_ybc,cohort,nfl_rushing,Rushing yards before contact,Sportradar / PFF
+nfl_rush_yac,cohort,nfl_rushing,Rushing yards after contact,Sportradar / PFF
+nfl_rush_brk_tkl,cohort,nfl_rushing,Broken tackles on rushing plays,Sportradar / PFF
+nfl_rush_ybc_per_att,cohort,nfl_rushing_rate,Yards before contact per rush attempt,Derived
+nfl_rush_yac_per_att,cohort,nfl_rushing_rate,Yards after contact per rush attempt,Derived
+nfl_rush_att_per_brk,cohort,nfl_rushing_rate,Rush attempts per broken tackle (higher = fewer broken tackles),Derived
+nfl_rush_yds_per_att,cohort,nfl_rushing_rate,Rushing yards per attempt,Derived
+nfl_rush_seasons_found,cohort,nfl_meta,Number of NFL seasons with rushing data found,Data collection
+col_completions,college,college_passing,College career pass completions (last 2 seasons),College Football Data API
+col_att,college,college_passing,College career pass attempts (last 2 seasons),College Football Data API
+col_yds,college,college_passing,College career passing yards (last 2 seasons),College Football Data API
+col_td,college,college_passing,College career passing touchdowns (last 2 seasons),College Football Data API
+col_int,college,college_passing,College career interceptions thrown (last 2 seasons),College Football Data API
+col_rush_car,college,college_rushing,College career rush attempts/carries (last 2 seasons),College Football Data API
+col_rush_yds,college,college_rushing,College career rushing yards (last 2 seasons),College Football Data API
+col_rush_td,college,college_rushing,College career rushing touchdowns (last 2 seasons),College Football Data API
+col_ppa_plays,college,college_advanced,Number of plays used to calculate PPA metrics,College Football Data API
+col_cmp_pct,"model, college",college_rate,College completion percentage,Derived
+col_yds_per_att,"model, college",college_rate,College passing yards per attempt,Derived
+col_td_int_ratio,"model, college",college_rate,College touchdown-to-interception ratio,Derived
+col_int_rate,"model, college",college_rate,College interception rate — INTs / pass attempts × 100,Derived
+col_rush_yds_per_att,"model, college",college_rate,College rushing yards per carry,Derived
+col_ppa_overall,"model, college",college_advanced,"Predicted Points Added (PPA) overall — average points added per play, all play types",College Football Data API
+col_ppa_pass,"model, college",college_advanced,PPA on passing plays — average points added per pass play,College Football Data API
+col_ppa_rush,"model, college",college_advanced,PPA on rushing plays — average points added per rush play,College Football Data API
+col_usage_overall,"model, college",college_advanced,"Overall usage rate — share of team plays involving this player (0-1 scale, higher = more involved)",College Football Data API
+col_usage_pass,"model, college",college_advanced,Pass usage rate — share of team pass plays involving this player,College Football Data API
+col_usage_rush,"model, college",college_advanced,Rush usage rate — share of team rush plays involving this player,College Football Data API
+col_usage_first_down,"model, college",college_advanced,Usage rate on first down plays,College Football Data API
+col_usage_second_down,"model, college",college_advanced,Usage rate on second down plays,College Football Data API
+col_usage_third_down,"model, college",college_advanced,Usage rate on third down plays,College Football Data API
+col_explosiveness,college,college_advanced,Average explosiveness — measures how often plays generate big gains relative to expected,College Football Data API
+col_conference,college,college_meta,"Conference the player's college team belonged to (e.g. SEC, B1G, ACC)",College Football Data API
+col_team,college,college_meta,College team name,College Football Data API
+col_seasons_found,college,college_meta,Number of college seasons with data found,Data collection
+col_sacks,college,college_passing,Total sacks taken in college,College Football Data API
+col_sack_yds,college,college_passing,Total yardage lost on sacks in college,College Football Data API
+col_sack_rate,"model, college",college_rate,College sack rate — sacks / (pass attempts + sacks),College Football Data API / Derived
+recruit_rating,"model, college",recruiting,247Sports composite recruit rating (0-1 scale),247Sports
+recruit_stars,"model, college",recruiting,247Sports composite star rating (2-5),247Sports
+recruit_ranking,college,recruiting,247Sports composite national ranking,247Sports
+recruit_position,college,recruiting,"Recruit position designation (PRO = pro-style, DUAL = dual-threat)",247Sports
+recruit_city,college,recruiting,Recruit hometown city,247Sports
+recruit_state_prov,college,recruiting,Recruit hometown state/province,247Sports

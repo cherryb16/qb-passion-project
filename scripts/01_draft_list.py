@@ -1,22 +1,19 @@
 """
 Step 1: Parse locally downloaded PFR draft XLS files into a clean QB list.
 
-Files in data/raw/draft/ are HTML tables exported from PFR with a .xls extension.
-They cover 2008–2023 in order: sportsref_download.xls = 2008,
-sportsref_download (1).xls = 2009, ..., sportsref_download (15).xls = 2023.
+Files in data/raw/draft/ are named {year}-draft.xls (e.g. 2008-draft.xls).
+Add new years by dropping a {year}-draft.xls file in the directory.
 
 Output: data/raw/qbs_drafted.csv
 Columns: qb_name, draft_year, draft_round, draft_pick, nfl_team, college
 """
 
 import glob
+import re
 import pandas as pd
 
 DRAFT_DIR = "data/raw/draft"
 OUT_PATH = "data/raw/qbs_drafted.csv"
-
-# Maps file sort-order index (0-based) to draft year
-START_YEAR = 2008
 
 
 def flatten_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -63,15 +60,20 @@ def parse_file(path: str, year: int) -> list[dict]:
 
 
 def main():
-    files = sorted(glob.glob(f"{DRAFT_DIR}/*.xls"), key=lambda x: (len(x), x))
+    files = sorted(glob.glob(f"{DRAFT_DIR}/*.xls"))
 
     if not files:
         print(f"No .xls files found in {DRAFT_DIR}/")
         return
 
     all_rows = []
-    for i, path in enumerate(files):
-        year = START_YEAR + i
+    for path in files:
+        # Extract year from filename: {year}-draft.xls
+        match = re.search(r"(\d{4})-draft", path)
+        if not match:
+            print(f"  Skipping unrecognized filename: {path}")
+            continue
+        year = int(match.group(1))
         rows = parse_file(path, year)
         print(f"{year}: {len(rows)} QBs — {[r['qb_name'] for r in rows[:3]]}")
         all_rows.extend(rows)

@@ -53,6 +53,9 @@ def aggregate_nfl_seasons(seasons_df):
     # Counting stats — sum across seasons
     count_cols = [
         "G", "GS", "Cmp", "Att",
+        # Standard stat counts
+        "Yds", "TD", "Int", "Sk",
+        # Advanced stat counts
         "IAY", "CAY", "YAC",
         "Bats", "ThAwy", "Spikes", "Drops", "BadTh", "OnTgt",
         "Bltz", "Hrry", "Hits", "Prss", "Scrm",
@@ -66,13 +69,21 @@ def aggregate_nfl_seasons(seasons_df):
 
     # Rate stats — attempt-weighted average
     rate_cols = [
+        # Standard rate stats
+        "Cmp%", "TD%", "Int%", "Y/A", "AY/A", "NY/A", "ANY/A", "Rate", "Sk%",
+        # Advanced rate stats
         "IAY_per_att", "CAY_per_cmp", "CAY_per_att", "YAC_per_cmp",
         "Drop_pct", "BadTh_pct", "OnTgt_pct",
         "PktTime", "Prss_pct", "Yds_per_scr",
     ]
     for col in rate_cols:
         if col in seasons_df.columns:
-            out[f"nfl_{col.lower()}"] = weighted_avg(seasons_df, col, "_att")
+            out[f"nfl_{col.lower().replace('/', '_').replace('%', '_pct')}"] = weighted_avg(seasons_df, col, "_att")
+
+    # QBR — simple average (already per-game adjusted, not attempt-weighted)
+    if "QBR" in seasons_df.columns:
+        qbr_vals = pd.to_numeric(seasons_df["QBR"], errors="coerce").dropna()
+        out["nfl_qbr"] = qbr_vals.mean() if not qbr_vals.empty else None
 
     # Track which seasons were found
     out["nfl_seasons_found"] = len(seasons_df)
@@ -142,10 +153,15 @@ def main():
     print(f"Unmatched ({len(unmatched)}): {unmatched[:10]}")
 
     # Apply cohort filter
+    # Require key advanced stat columns to be non-null so QBs with only
+    # partial advanced data (e.g. 2017 draftees whose first season predates
+    # the advanced stats era) are excluded from the cohort.
+    KEY_ADVANCED = ["nfl_ontgt_pct", "nfl_badth_pct", "nfl_prss_pct", "nfl_pkttime"]
     cohort = df[
         (pd.to_numeric(df["nfl_g"], errors="coerce").fillna(0) >= MIN_NFL_GAMES) &
         (pd.to_numeric(df["nfl_gs"], errors="coerce").fillna(0) >= MIN_NFL_STARTS) &
-        (df["has_advanced_stats"] == True)
+        (df["has_advanced_stats"] == True) &
+        (df[[c for c in KEY_ADVANCED if c in df.columns]].notna().all(axis=1))
     ].copy()
     cohort = cohort.sort_values(["draft_year", "draft_pick"]).reset_index(drop=True)
 
@@ -153,9 +169,9 @@ def main():
     print(f"\nBy draft year:")
     print(cohort.groupby("draft_year").size().to_string())
 
-    print(f"\nSample (name, year, G, ANY/A, passer rating):")
+    print(f"\nSample (name, year, G, ANY/A, passer rating, QBR):")
     sample_cols = ["qb_name", "draft_year", "nfl_g", "nfl_gs",
-                   "nfl_any_per_a", "nfl_rate", "has_advanced_stats"]
+                   "nfl_any_a", "nfl_rate", "nfl_qbr", "has_advanced_stats"]
     print(cohort[[c for c in sample_cols if c in cohort.columns]].head(15).to_string(index=False))
 
     cohort.to_csv(OUT_PATH, index=False)

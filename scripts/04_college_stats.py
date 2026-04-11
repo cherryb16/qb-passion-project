@@ -8,6 +8,8 @@ Endpoints used per season year (one call each = very efficient):
   /stats/player/season   — traditional passing + rushing stats
   /ppa/players/season    — PPA (Predicted Points Added) per play
   /player/usage          — usage rates by down, explosiveness
+  /records               — team win/loss records per season
+  /ratings/sp            — SP+ strength of schedule per season
 
 Features engineered per QB (last 2 college seasons combined):
   Traditional:
@@ -16,8 +18,11 @@ Features engineered per QB (last 2 college seasons combined):
   Advanced:
     ppa_overall, ppa_pass, ppa_rush (avg predicted pts added per play)
     usage_overall, usage_passing, usage_third_down
-    explosiveness (avg PPA on successful plays)
+    col_explosiveness (avg PPA on successful plays)
     pass_td_pct, first_down_pct
+  Team context:
+    col_team_win_pct (avg team win % across last 2 seasons)
+    col_sos_rating (avg SP+ strength of schedule across last 2 seasons)
 
 Input:  data/processed/qb_cohort.csv
 Output: data/raw/cfbd_raw_stats.json   (raw API responses, cached)
@@ -31,7 +36,17 @@ import requests
 import pandas as pd
 from rapidfuzz import process, fuzz
 
-CFBD_KEY = os.environ.get("CFBD_KEY", "Gh0YQadv3zW/jJtWXn2QQ3jSZPaYiBaxLUX5atazB3zUuZqWMZt7Uh3vTiHRO24D")
+# Load .env.local if present (keeps key out of source code)
+_env_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env.local")
+if os.path.exists(_env_path):
+    with open(_env_path) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
+CFBD_KEY = os.environ.get("CFBD_KEY", "")
 BASE = "https://api.collegefootballdata.com"
 COHORT_PATH = "data/processed/qb_cohort.csv"
 RAW_CACHE = "data/raw/cfbd_raw_stats.json"
@@ -139,8 +154,10 @@ def fetch_all_seasons(years: list[int]) -> dict:
             print(f"    recruiting {ry} ERROR: {e}")
     print(f"    recruiting: {len(cache['recruiting'])} total recruits")
 
+    # Convert np.int64 keys to plain int so json.dump works
+    cache_serializable = {int(k) if isinstance(k, (int, float)) else k: v for k, v in cache.items()}
     with open(RAW_CACHE, "w") as f:
-        json.dump(cache, f)
+        json.dump(cache_serializable, f)
     print(f"\nCached to {RAW_CACHE}")
     return cache
 
@@ -229,6 +246,45 @@ def extract_usage(name: str, year_data: dict) -> dict:
     }
 
 
+def fetch_team_record(team: str, year: int) -> dict | None:
+    """
+    Fetch win/loss record for a team in a given year from CFBD /records.
+    Returns dict with win_pct or None on failure.
+    """
+    try:
+        data = cfbd_get("records", {"year": year, "team": team})
+        if not data:
+            return None
+        record = data[0] if isinstance(data, list) else data
+        total = record.get("total", {})
+        wins   = total.get("wins", 0)
+        losses = total.get("losses", 0)
+        games  = total.get("games") or (wins + losses)
+        if games and games > 0:
+            return {"win_pct": round(wins / games, 4)}
+    except Exception as e:
+        print(f"    team_record ERROR ({team} {year}): {e}")
+    return None
+
+
+def fetch_sp_ratings(team: str, year: int) -> dict | None:
+    """
+    Fetch SP+ ratings for a team in a given year from CFBD /ratings/sp.
+    Returns dict with sos_rating or None on failure.
+    """
+    try:
+        data = cfbd_get("ratings/sp", {"year": year, "team": team})
+        if not data:
+            return None
+        row = data[0] if isinstance(data, list) else data
+        sos = row.get("strengthOfSchedule")
+        if sos is not None:
+            return {"sos_rating": float(sos)}
+    except Exception as e:
+        print(f"    sp_ratings ERROR ({team} {year}): {e}")
+    return None
+
+
 def extract_recruiting(name: str, cache: dict) -> dict:
     rows = cache.get("recruiting", [])
     players = [r.get("name", "") for r in rows]
@@ -297,7 +353,7 @@ def aggregate_college(season_dicts: list[dict]) -> dict:
     for key in ["ppa_overall", "ppa_pass", "ppa_rush",
                 "usage_overall", "usage_pass", "usage_rush",
                 "usage_first_down", "usage_second_down", "usage_third_down",
-                "explosiveness"]:
+                "explosiveness", "team_win_pct", "sos_rating"]:
         vals = [s.get(key) for s in season_dicts]
         out[f"col_{key}"] = safe_avg(vals)
 
@@ -355,10 +411,22 @@ def main():
             usage   = extract_usage(name, yr_data)
 
             merged = {**passing, **rushing, **ppa, **usage}
+
+            # Fetch team record and SP+ SOS for the season
+            col_team = usage.get("team")
+            if col_team:
+                rec = fetch_team_record(col_team, int(yr))
+                if rec:
+                    merged["team_win_pct"] = rec["win_pct"]
+                sp = fetch_sp_ratings(col_team, int(yr))
+                if sp:
+                    merged["sos_rating"] = sp["sos_rating"]
+
             found = bool(passing or ppa or usage)
             print(f"  {yr}: {'found' if found else 'NOT FOUND'} — "
                   f"att={passing.get('att')}, cmp%={passing.get('pct')}, "
-                  f"ppa={ppa.get('ppa_overall')}, expl={usage.get('explosiveness')}")
+                  f"ppa={ppa.get('ppa_overall')}, expl={usage.get('explosiveness')}, "
+                  f"win_pct={merged.get('team_win_pct')}, sos={merged.get('sos_rating')}")
             season_features.append(merged)
 
         agg = aggregate_college(season_features)

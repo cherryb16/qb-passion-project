@@ -1,0 +1,17 @@
+# Environment / secrets
+.env
+.env.local
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Data (large files — keep raw source XLS out of git)
+data/raw/**/*.xls
+data/raw/cfbd_raw_stats.json
+
+# OS
+.DS_Store

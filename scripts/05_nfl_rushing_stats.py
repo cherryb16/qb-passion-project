@@ -17,17 +17,15 @@ RUSHING_DIR = "data/raw/rushing"
 COHORT_PATH = "data/processed/qb_cohort.csv"
 RUSHING_OUT = "data/raw/nfl_rushing_all.csv"
 
-# File 41 = 2025, 42 = 2024, ..., 49 = 2017
 RUSHING_FILES = {
-    "sportsref_download (41).xls": 2025,
-    "sportsref_download (42).xls": 2024,
-    "sportsref_download (43).xls": 2023,
-    "sportsref_download (44).xls": 2022,
-    "sportsref_download (45).xls": 2021,
-    "sportsref_download (46).xls": 2020,
-    "sportsref_download (47).xls": 2019,
-    "sportsref_download (48).xls": 2018,
-    "sportsref_download (49).xls": 2017,
+    "2018-rushing.xls": 2018,
+    "2019-rushing.xls": 2019,
+    "2020-rushing.xls": 2020,
+    "2021-rushing.xls": 2021,
+    "2022-rushing.xls": 2022,
+    "2023-rushing.xls": 2023,
+    "2024-rushing.xls": 2024,
+    "2025-rushing.xls": 2025,   # drop file here when available
 }
 
 

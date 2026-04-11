@@ -11,36 +11,33 @@ Output: data/raw/nfl_passing_all.csv
 """
 
 import glob
+import os
 import pandas as pd
 
 PASSING_DIR = "data/raw/passing"
 OUT_PATH = "data/raw/nfl_passing_all.csv"
 
 # --- File-to-year mapping ---
-# Advanced files: even-numbered 16-26, two per year descending from 2023
 ADVANCED_FILES = {
-    "sportsref_download (40).xls": 2025,
-    "sportsref_download (38).xls": 2024,
-    "sportsref_download (16).xls": 2023,
-    "sportsref_download (18).xls": 2022,
-    "sportsref_download (20).xls": 2021,
-    "sportsref_download (22).xls": 2020,
-    "sportsref_download (24).xls": 2019,
-    "sportsref_download (26).xls": 2018,
+    "2018-advanced.xls": 2018,
+    "2019-advanced.xls": 2019,
+    "2020-advanced.xls": 2020,
+    "2021-advanced.xls": 2021,
+    "2022-advanced.xls": 2022,
+    "2023-advanced.xls": 2023,
+    "2024-advanced.xls": 2024,
+    "2025-advanced.xls": 2025,   # drop file here when available
 }
 
-# Standard files: 28-36, descending from 2017
 STANDARD_FILES = {
-    "sportsref_download (28).xls": 2017,
-    "sportsref_download (29).xls": 2016,
-    "sportsref_download (30).xls": 2015,
-    "sportsref_download (31).xls": 2014,
-    "sportsref_download (32).xls": 2013,
-    "sportsref_download (33).xls": 2012,
-    "sportsref_download (34).xls": 2011,
-    "sportsref_download (35).xls": 2010,
-    "sportsref_download (36).xls": 2009,
-    "sportsref_download (39).xls": 2008,
+    "2018-standard.xls": 2018,
+    "2019-standard.xls": 2019,
+    "2020-standard.xls": 2020,
+    "2021-standard.xls": 2021,
+    "2022-standard.xls": 2022,
+    "2023-standard.xls": 2023,
+    "2024-standard.xls": 2024,
+    "2025-standard.xls": 2025,   # drop file here when available
 }
 
 
@@ -156,9 +153,12 @@ def parse_standard(path: str, year: int) -> pd.DataFrame:
 def main():
     frames = []
 
-    print("Parsing advanced stat files (2018–2023)...")
+    print("Parsing advanced stat files...")
     for fname, year in ADVANCED_FILES.items():
         path = f"{PASSING_DIR}/{fname}"
+        if not os.path.exists(path):
+            print(f"  {year}: SKIPPED (file not found — drop {fname} to include)")
+            continue
         try:
             df = parse_advanced(path, year)
             print(f"  {year}: {len(df)} QBs")
@@ -166,9 +166,12 @@ def main():
         except Exception as e:
             print(f"  ERROR {fname}: {e}")
 
-    print("\nParsing standard stat files (2009–2017)...")
+    print("\nParsing standard stat files...")
     for fname, year in STANDARD_FILES.items():
         path = f"{PASSING_DIR}/{fname}"
+        if not os.path.exists(path):
+            print(f"  {year}: SKIPPED (file not found — drop {fname} to include)")
+            continue
         try:
             df = parse_standard(path, year)
             print(f"  {year}: {len(df)} QBs")
