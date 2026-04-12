@@ -9411,5 +9411,4735 @@
       }
     ],
     "_comment": "Generation started @ 2025-12-06 17:34:54 +0000 ended @ 2025-12-06 17:34:54 +0000"
+  },
+  "Mason Rudolph": {
+    "id": "28ff89d2-331f-48e6-b75c-60b3ca771ab2",
+    "name": "Mason Rudolph",
+    "jersey": "2",
+    "last_name": "Rudolph",
+    "first_name": "Mason",
+    "abbr_name": "M.Rudolph",
+    "weight": 230.0,
+    "height": 77,
+    "position": "QB",
+    "birth_place": "Rock Hill, SC, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "seasons": [
+      {
+        "id": "b07de423-006d-4ae2-b9ed-532841ab1c4c",
+        "year": 2014,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e346442f-9228-4e94-8e9a-376c5ef7e796",
+            "name": "Cowboys",
+            "market": "Oklahoma State",
+            "alias": "OKST",
+            "statistics": {
+              "games_played": 3,
+              "games_started": 3,
+              "rushing": {
+                "avg_yards": -2.357,
+                "attempts": 14,
+                "touchdowns": 0,
+                "yards": -33,
+                "longest": 7,
+                "longest_touchdown": 0,
+                "redzone_attempts": 1,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 0
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 22,
+                "avg_yards": 22.0,
+                "longest": 22,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 22,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 86,
+                "completions": 49,
+                "cmp_pct": 56.977,
+                "yards": 853,
+                "avg_yards": 9.919,
+                "sacks": 8,
+                "sack_yards": 51,
+                "touchdowns": 6,
+                "longest": 68,
+                "interceptions": 4,
+                "rating": 154.01,
+                "longest_touchdown": 68,
+                "air_yards": 0,
+                "redzone_attempts": 3,
+                "gross_yards": 853,
+                "first_downs": 32
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 1,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "23e2cfa5-e19f-4ec1-bc60-b568212d91e5",
+        "year": 2015,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e346442f-9228-4e94-8e9a-376c5ef7e796",
+            "name": "Cowboys",
+            "market": "Oklahoma State",
+            "alias": "OKST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": -0.522,
+                "attempts": 67,
+                "touchdowns": 1,
+                "yards": -35,
+                "longest": 40,
+                "longest_touchdown": 21,
+                "redzone_attempts": 5,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 4
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 7,
+                "avg_yards": 7.0,
+                "longest": 7,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 7,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 424,
+                "completions": 264,
+                "cmp_pct": 62.264,
+                "yards": 3770,
+                "avg_yards": 8.892,
+                "sacks": 30,
+                "sack_yards": 175,
+                "touchdowns": 21,
+                "longest": 82,
+                "interceptions": 9,
+                "rating": 149.05,
+                "longest_touchdown": 82,
+                "air_yards": 0,
+                "redzone_attempts": 45,
+                "gross_yards": 3770,
+                "first_downs": 168
+              },
+              "fumbles": {
+                "fumbles": 6,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9ff91613-d2c8-4922-9f51-2ce706f5ac0b",
+        "year": 2016,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e346442f-9228-4e94-8e9a-376c5ef7e796",
+            "name": "Cowboys",
+            "market": "Oklahoma State",
+            "alias": "OKST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 0.735,
+                "attempts": 83,
+                "touchdowns": 6,
+                "yards": 61,
+                "longest": 25,
+                "longest_touchdown": 12,
+                "redzone_attempts": 22,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 14
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 24,
+                "avg_yards": 24.0,
+                "longest": 24,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 24,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 448,
+                "completions": 284,
+                "cmp_pct": 63.393,
+                "yards": 4091,
+                "avg_yards": 9.132,
+                "sacks": 31,
+                "sack_yards": 199,
+                "touchdowns": 28,
+                "longest": 91,
+                "interceptions": 4,
+                "rating": 158.94,
+                "longest_touchdown": 91,
+                "air_yards": 0,
+                "redzone_attempts": 53,
+                "gross_yards": 4091,
+                "first_downs": 174
+              },
+              "fumbles": {
+                "fumbles": 6,
+                "lost_fumbles": 5,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 2,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 1
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8e84b9ee-9b8e-45ef-b61f-0dfd26ff37e6",
+        "year": 2017,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e346442f-9228-4e94-8e9a-376c5ef7e796",
+            "name": "Cowboys",
+            "market": "Oklahoma State",
+            "alias": "OKST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 0.574,
+                "attempts": 61,
+                "touchdowns": 10,
+                "yards": 35,
+                "longest": 19,
+                "longest_touchdown": 16,
+                "redzone_attempts": 24,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 11
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 10,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 489,
+                "completions": 318,
+                "cmp_pct": 65.031,
+                "yards": 4904,
+                "avg_yards": 10.029,
+                "sacks": 23,
+                "sack_yards": 114,
+                "touchdowns": 37,
+                "longest": 86,
+                "interceptions": 9,
+                "rating": 170.56,
+                "longest_touchdown": 86,
+                "air_yards": 0,
+                "redzone_attempts": 71,
+                "gross_yards": 4904,
+                "first_downs": 215
+              },
+              "fumbles": {
+                "fumbles": 5,
+                "lost_fumbles": 3,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-06 17:10:19 +0000 ended @ 2025-12-06 17:10:19 +0000"
+  },
+  "Trey Lance": {
+    "id": "5fdf1bbb-3cab-4f5b-a884-63d4ca0a7eed",
+    "name": "Trey Lance",
+    "jersey": "0",
+    "last_name": "Lance",
+    "first_name": "Trey",
+    "abbr_name": "T.Lance",
+    "weight": 226.0,
+    "height": 76,
+    "position": "QB",
+    "birth_place": "Marshall, MN, USA",
+    "status": "NWT",
+    "eligibility": "SO",
+    "seasons": [
+      {
+        "id": "34e9387d-2422-40dd-b289-572245995f35",
+        "year": 2018,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0a05210a-81f7-4d04-80e5-4ba6ee748ccd",
+            "name": "Bison",
+            "market": "North Dakota State",
+            "alias": "NDSU",
+            "statistics": {
+              "games_played": 2,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 10.25,
+                "attempts": 8,
+                "touchdowns": 2,
+                "yards": 82,
+                "longest": 44,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 1,
+                "completions": 1,
+                "cmp_pct": 100.0,
+                "yards": 12,
+                "avg_yards": 12.0,
+                "sacks": 0,
+                "sack_yards": 0,
+                "touchdowns": 0,
+                "longest": 12,
+                "interceptions": 0,
+                "rating": 200.8,
+                "longest_touchdown": 0,
+                "air_yards": 0,
+                "redzone_attempts": 0,
+                "gross_yards": 12,
+                "first_downs": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0a05210a-81f7-4d04-80e5-4ba6ee748ccd",
+            "name": "Bison",
+            "market": "North Dakota State",
+            "alias": "NDSU",
+            "statistics": {
+              "games_played": 16,
+              "games_started": 16,
+              "rushing": {
+                "avg_yards": 6.509,
+                "attempts": 169,
+                "touchdowns": 14,
+                "yards": 1100,
+                "longest": 61,
+                "longest_touchdown": 44,
+                "redzone_attempts": 10,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 18
+              },
+              "passing": {
+                "attempts": 287,
+                "completions": 192,
+                "cmp_pct": 66.899,
+                "yards": 2786,
+                "avg_yards": 9.707,
+                "sacks": 11,
+                "sack_yards": 20,
+                "touchdowns": 28,
+                "longest": 88,
+                "interceptions": 0,
+                "rating": 180.64,
+                "longest_touchdown": 75,
+                "air_yards": 0,
+                "redzone_attempts": 11,
+                "gross_yards": 2786,
+                "first_downs": 25
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 0,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0a05210a-81f7-4d04-80e5-4ba6ee748ccd",
+            "name": "Bison",
+            "market": "North Dakota State",
+            "alias": "NDSU",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 9.533,
+                "attempts": 15,
+                "touchdowns": 2,
+                "yards": 143,
+                "longest": 54,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 30,
+                "completions": 15,
+                "cmp_pct": 50.0,
+                "yards": 149,
+                "avg_yards": 4.967,
+                "sacks": 2,
+                "sack_yards": 0,
+                "touchdowns": 2,
+                "longest": 23,
+                "interceptions": 1,
+                "rating": 107.05,
+                "longest_touchdown": 0,
+                "air_yards": 0,
+                "redzone_attempts": 0,
+                "gross_yards": 149,
+                "first_downs": 0,
+                "int_touchdowns": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-06 17:10:43 +0000 ended @ 2025-12-06 17:10:43 +0000"
+  },
+  "Bailey Zappe": {
+    "id": "509b2c47-4d43-4288-a1b1-59b83cae4d2e",
+    "name": "Bailey Zappe",
+    "jersey": "0",
+    "last_name": "Zappe",
+    "first_name": "Bailey",
+    "abbr_name": "B.Zappe",
+    "weight": 220.0,
+    "height": 73,
+    "position": "QB",
+    "birth_place": "Victoria, TX, USA",
+    "status": "NWT",
+    "eligibility": "GR",
+    "seasons": [
+      {
+        "id": "8e84b9ee-9b8e-45ef-b61f-0dfd26ff37e6",
+        "year": 2017,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0cbc0bb6-596a-49da-a1cb-bfa42b5fcb56",
+            "name": "Huskies",
+            "market": "Houston Christian",
+            "alias": "HCU",
+            "statistics": {
+              "games_played": 10,
+              "games_started": 9,
+              "rushing": {
+                "avg_yards": 0.617,
+                "attempts": 81,
+                "touchdowns": 2,
+                "yards": 50,
+                "longest": 43,
+                "longest_touchdown": 0,
+                "redzone_attempts": 2,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 266,
+                "completions": 150,
+                "cmp_pct": 56.391,
+                "yards": 1548,
+                "avg_yards": 5.82,
+                "sacks": 36,
+                "sack_yards": 51,
+                "touchdowns": 5,
+                "longest": 61,
+                "interceptions": 10,
+                "rating": 103.96,
+                "longest_touchdown": 0,
+                "air_yards": 0,
+                "redzone_attempts": 3,
+                "gross_yards": 1548,
+                "first_downs": 11
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "34e9387d-2422-40dd-b289-572245995f35",
+        "year": 2018,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0cbc0bb6-596a-49da-a1cb-bfa42b5fcb56",
+            "name": "Huskies",
+            "market": "Houston Christian",
+            "alias": "HCU",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 11,
+              "rushing": {
+                "avg_yards": 1.517,
+                "attempts": 118,
+                "touchdowns": 1,
+                "yards": 179,
+                "longest": 68,
+                "longest_touchdown": 0,
+                "redzone_attempts": 1,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 0,
+                "yards": 21,
+                "avg_yards": 21.0,
+                "longest": 21,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 21,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 436,
+                "completions": 252,
+                "cmp_pct": 57.798,
+                "yards": 2812,
+                "avg_yards": 6.45,
+                "sacks": 41,
+                "sack_yards": 21,
+                "touchdowns": 23,
+                "longest": 80,
+                "interceptions": 13,
+                "rating": 123.42,
+                "longest_touchdown": 8,
+                "air_yards": 0,
+                "redzone_attempts": 6,
+                "gross_yards": 2812,
+                "first_downs": 14
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0cbc0bb6-596a-49da-a1cb-bfa42b5fcb56",
+            "name": "Huskies",
+            "market": "Houston Christian",
+            "alias": "HCU",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 0.0,
+                "attempts": 53,
+                "touchdowns": 0,
+                "yards": 0,
+                "longest": 22,
+                "longest_touchdown": 0,
+                "redzone_attempts": 1,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 560,
+                "completions": 357,
+                "cmp_pct": 63.75,
+                "yards": 3811,
+                "avg_yards": 6.805,
+                "sacks": 23,
+                "sack_yards": 19,
+                "touchdowns": 35,
+                "longest": 66,
+                "interceptions": 15,
+                "rating": 136.18,
+                "longest_touchdown": 16,
+                "air_yards": 0,
+                "redzone_attempts": 7,
+                "gross_yards": 3811,
+                "first_downs": 17
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "0cbc0bb6-596a-49da-a1cb-bfa42b5fcb56",
+            "name": "Huskies",
+            "market": "Houston Christian",
+            "alias": "HCU",
+            "statistics": {
+              "games_played": 4,
+              "games_started": 4,
+              "rushing": {
+                "avg_yards": 0.737,
+                "attempts": 19,
+                "touchdowns": 0,
+                "yards": 14,
+                "longest": 10,
+                "longest_touchdown": 0,
+                "redzone_attempts": 2,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "penalties": {
+                "penalties": 3,
+                "yards": 10,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 215,
+                "completions": 141,
+                "cmp_pct": 65.581,
+                "yards": 1833,
+                "avg_yards": 8.526,
+                "sacks": 7,
+                "sack_yards": 52,
+                "touchdowns": 15,
+                "longest": 75,
+                "interceptions": 1,
+                "rating": 159.29,
+                "longest_touchdown": 75,
+                "air_yards": 0,
+                "redzone_attempts": 30,
+                "gross_yards": 1833,
+                "first_downs": 64,
+                "int_touchdowns": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e65ef52d-6a34-426e-816e-040258d2f33b",
+            "name": "Hilltoppers",
+            "market": "Western Kentucky",
+            "alias": "WKU",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 14,
+              "rushing": {
+                "avg_yards": 0.333,
+                "attempts": 51,
+                "touchdowns": 3,
+                "yards": 17,
+                "longest": 21,
+                "longest_touchdown": 10,
+                "redzone_attempts": 11,
+                "tlost": 3,
+                "tlost_yards": -9,
+                "first_downs": 8
+              },
+              "penalties": {
+                "penalties": 5,
+                "yards": 21,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 686,
+                "completions": 475,
+                "cmp_pct": 69.242,
+                "yards": 5967,
+                "avg_yards": 8.698,
+                "sacks": 16,
+                "sack_yards": 114,
+                "touchdowns": 62,
+                "longest": 75,
+                "interceptions": 11,
+                "rating": 168.93,
+                "longest_touchdown": 75,
+                "air_yards": 0,
+                "redzone_attempts": 121,
+                "gross_yards": 5967,
+                "first_downs": 260,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 4,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 4,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-06 17:26:46 +0000 ended @ 2025-12-06 17:26:46 +0000"
+  },
+  "Anthony Richardson": {
+    "id": "5e150861-e6cb-465a-8d18-fe90a34daa2b",
+    "name": "Anthony Richardson",
+    "jersey": "0",
+    "last_name": "Richardson",
+    "first_name": "Anthony",
+    "abbr_name": "A.Richardson",
+    "weight": 232.0,
+    "height": 76,
+    "position": "QB",
+    "birth_place": "Gainesville, FL, USA",
+    "status": "NWT",
+    "eligibility": "SO",
+    "seasons": [
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "c765cbff-99d8-4c43-8f6b-e49577ca18fa",
+            "name": "Gators",
+            "market": "Florida",
+            "alias": "FLA",
+            "statistics": {
+              "games_played": 5,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 8.714,
+                "attempts": 7,
+                "touchdowns": 0,
+                "yards": 61,
+                "longest": 28,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "passing": {
+                "attempts": 2,
+                "completions": 1,
+                "cmp_pct": 50.0,
+                "yards": 27,
+                "avg_yards": 13.5,
+                "sacks": 0,
+                "sack_yards": 0,
+                "touchdowns": 1,
+                "longest": 27,
+                "interceptions": 1,
+                "rating": 228.4,
+                "longest_touchdown": 27,
+                "air_yards": 0,
+                "redzone_attempts": 0,
+                "gross_yards": 27,
+                "first_downs": 1,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 0,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "c765cbff-99d8-4c43-8f6b-e49577ca18fa",
+            "name": "Gators",
+            "market": "Florida",
+            "alias": "FLA",
+            "statistics": {
+              "games_played": 9,
+              "games_started": 1,
+              "rushing": {
+                "avg_yards": 7.863,
+                "attempts": 51,
+                "touchdowns": 3,
+                "yards": 401,
+                "longest": 80,
+                "longest_touchdown": 80,
+                "redzone_attempts": 7,
+                "tlost": 5,
+                "tlost_yards": -8,
+                "first_downs": 15
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 1,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 64,
+                "completions": 38,
+                "cmp_pct": 59.375,
+                "yards": 529,
+                "avg_yards": 8.266,
+                "sacks": 3,
+                "sack_yards": 23,
+                "touchdowns": 6,
+                "longest": 75,
+                "interceptions": 5,
+                "rating": 144.12,
+                "longest_touchdown": 75,
+                "air_yards": 72,
+                "redzone_attempts": 7,
+                "gross_yards": 529,
+                "first_downs": 20,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 0,
+                "pass_successes": 0,
+                "rush_attempts": 1,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "c765cbff-99d8-4c43-8f6b-e49577ca18fa",
+            "name": "Gators",
+            "market": "Florida",
+            "alias": "FLA",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 6.35,
+                "attempts": 103,
+                "touchdowns": 9,
+                "yards": 654,
+                "longest": 81,
+                "longest_touchdown": 81,
+                "redzone_attempts": 23,
+                "tlost": 3,
+                "tlost_yards": -4,
+                "first_downs": 35
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 327,
+                "completions": 176,
+                "cmp_pct": 53.823,
+                "yards": 2549,
+                "avg_yards": 7.795,
+                "sacks": 13,
+                "sack_yards": 74,
+                "touchdowns": 17,
+                "longest": 78,
+                "interceptions": 9,
+                "rating": 130.95,
+                "longest_touchdown": 78,
+                "air_yards": 15,
+                "redzone_attempts": 45,
+                "gross_yards": 2549,
+                "first_downs": 112,
+                "int_touchdowns": 1
+              },
+              "fumbles": {
+                "fumbles": 3,
+                "lost_fumbles": 2,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 2,
+                "assists": 0,
+                "combined": 2,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 6,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-05 17:31:31 +0000 ended @ 2025-12-05 17:31:31 +0000"
+  },
+  "Dorian Thompson-Robinson": {
+    "id": "fc209c23-e1e9-4ec9-8d85-ab17a98aba81",
+    "name": "Dorian Thompson-Robinson",
+    "jersey": "0",
+    "last_name": "Thompson-Robinson",
+    "first_name": "Dorian",
+    "abbr_name": "D.Thompson-Robinson",
+    "weight": 205.0,
+    "height": 73,
+    "position": "QB",
+    "birth_place": "Las Vegas, NV, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "seasons": [
+      {
+        "id": "34e9387d-2422-40dd-b289-572245995f35",
+        "year": 2018,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "398eda2b-ba77-469f-94df-18fd1d9087d8",
+            "name": "Bruins",
+            "market": "UCLA",
+            "alias": "UCLA",
+            "statistics": {
+              "games_played": 10,
+              "games_started": 8,
+              "rushing": {
+                "avg_yards": 1.36,
+                "attempts": 50,
+                "touchdowns": 0,
+                "yards": 68,
+                "longest": 23,
+                "longest_touchdown": 0,
+                "redzone_attempts": 8,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 10
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 194,
+                "completions": 112,
+                "cmp_pct": 57.732,
+                "yards": 1311,
+                "avg_yards": 6.758,
+                "sacks": 19,
+                "sack_yards": 138,
+                "touchdowns": 7,
+                "longest": 65,
+                "interceptions": 4,
+                "rating": 122.28,
+                "longest_touchdown": 63,
+                "air_yards": 0,
+                "redzone_attempts": 22,
+                "gross_yards": 1311,
+                "first_downs": 60
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "398eda2b-ba77-469f-94df-18fd1d9087d8",
+            "name": "Bruins",
+            "market": "UCLA",
+            "alias": "UCLA",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 11,
+              "rushing": {
+                "avg_yards": 1.678,
+                "attempts": 118,
+                "touchdowns": 4,
+                "yards": 198,
+                "longest": 39,
+                "longest_touchdown": 3,
+                "redzone_attempts": 24,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 30
+              },
+              "penalties": {
+                "penalties": 3,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 362,
+                "completions": 216,
+                "cmp_pct": 59.669,
+                "yards": 2701,
+                "avg_yards": 7.461,
+                "sacks": 34,
+                "sack_yards": 325,
+                "touchdowns": 21,
+                "longest": 94,
+                "interceptions": 12,
+                "rating": 134.86,
+                "longest_touchdown": 94,
+                "air_yards": 0,
+                "redzone_attempts": 58,
+                "gross_yards": 2701,
+                "first_downs": 126
+              },
+              "fumbles": {
+                "fumbles": 11,
+                "lost_fumbles": 7,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 1,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 3,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "398eda2b-ba77-469f-94df-18fd1d9087d8",
+            "name": "Bruins",
+            "market": "UCLA",
+            "alias": "UCLA",
+            "statistics": {
+              "games_played": 5,
+              "games_started": 5,
+              "rushing": {
+                "avg_yards": 5.564,
+                "attempts": 55,
+                "touchdowns": 3,
+                "yards": 306,
+                "longest": 65,
+                "longest_touchdown": 65,
+                "redzone_attempts": 8,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 16
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 10,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 138,
+                "completions": 90,
+                "cmp_pct": 65.217,
+                "yards": 1120,
+                "avg_yards": 8.116,
+                "sacks": 9,
+                "sack_yards": 61,
+                "touchdowns": 12,
+                "longest": 69,
+                "interceptions": 4,
+                "rating": 156.29,
+                "longest_touchdown": 69,
+                "air_yards": 0,
+                "redzone_attempts": 14,
+                "gross_yards": 1120,
+                "first_downs": 54
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 1,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "398eda2b-ba77-469f-94df-18fd1d9087d8",
+            "name": "Bruins",
+            "market": "UCLA",
+            "alias": "UCLA",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 11,
+              "rushing": {
+                "avg_yards": 4.685,
+                "attempts": 130,
+                "touchdowns": 9,
+                "yards": 609,
+                "longest": 35,
+                "longest_touchdown": 23,
+                "redzone_attempts": 23,
+                "tlost": 7,
+                "tlost_yards": -30,
+                "first_downs": 44
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 20,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 283,
+                "completions": 176,
+                "cmp_pct": 62.191,
+                "yards": 2409,
+                "avg_yards": 8.512,
+                "sacks": 20,
+                "sack_yards": 115,
+                "touchdowns": 21,
+                "longest": 75,
+                "interceptions": 6,
+                "rating": 153.94,
+                "longest_touchdown": 75,
+                "air_yards": 0,
+                "redzone_attempts": 31,
+                "gross_yards": 2409,
+                "first_downs": 103,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 3,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 1,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "398eda2b-ba77-469f-94df-18fd1d9087d8",
+            "name": "Bruins",
+            "market": "UCLA",
+            "alias": "UCLA",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 5.466,
+                "attempts": 118,
+                "touchdowns": 12,
+                "yards": 645,
+                "longest": 68,
+                "longest_touchdown": 68,
+                "redzone_attempts": 31,
+                "tlost": 9,
+                "tlost_yards": -25,
+                "first_downs": 39
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 382,
+                "completions": 266,
+                "cmp_pct": 69.634,
+                "yards": 3169,
+                "avg_yards": 8.296,
+                "sacks": 16,
+                "sack_yards": 110,
+                "touchdowns": 27,
+                "longest": 70,
+                "interceptions": 10,
+                "rating": 157.41,
+                "longest_touchdown": 70,
+                "air_yards": 89,
+                "redzone_attempts": 60,
+                "gross_yards": 3169,
+                "first_downs": 145,
+                "int_touchdowns": 1
+              },
+              "fumbles": {
+                "fumbles": 8,
+                "lost_fumbles": 3,
+                "own_rec": 4,
+                "own_rec_yards": 14,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 2,
+                "rush_attempts": 1,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-05 17:10:28 +0000 ended @ 2025-12-05 17:10:28 +0000"
+  },
+  "Caleb Williams": {
+    "id": "8a3303bd-5625-4840-a539-3be7299339ae",
+    "name": "Caleb Williams",
+    "last_name": "Williams",
+    "first_name": "Caleb",
+    "abbr_name": "C.Williams",
+    "weight": 215.0,
+    "height": 73,
+    "position": "QB",
+    "birth_place": "Washington, DC, USA",
+    "status": "NWT",
+    "eligibility": "JR",
+    "seasons": [
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 7,
+              "rushing": {
+                "avg_yards": 5.595,
+                "attempts": 79,
+                "touchdowns": 6,
+                "yards": 442,
+                "longest": 74,
+                "longest_touchdown": 74,
+                "redzone_attempts": 11,
+                "tlost": 6,
+                "tlost_yards": -35,
+                "first_downs": 19
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 211,
+                "completions": 136,
+                "cmp_pct": 64.455,
+                "yards": 1912,
+                "avg_yards": 9.062,
+                "sacks": 20,
+                "sack_yards": 121,
+                "touchdowns": 21,
+                "longest": 67,
+                "interceptions": 4,
+                "rating": 169.62,
+                "longest_touchdown": 67,
+                "air_yards": 8,
+                "redzone_attempts": 38,
+                "gross_yards": 1912,
+                "first_downs": 86,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 5,
+                "lost_fumbles": 1,
+                "own_rec": 3,
+                "own_rec_yards": -5,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "8f496f34-14e3-4ca7-958b-53f6da0b74d6",
+            "name": "Trojans",
+            "market": "USC",
+            "alias": "USC",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 14,
+              "rushing": {
+                "avg_yards": 3.381,
+                "attempts": 113,
+                "touchdowns": 10,
+                "yards": 382,
+                "longest": 59,
+                "longest_touchdown": 16,
+                "redzone_attempts": 20,
+                "tlost": 8,
+                "tlost_yards": -41,
+                "first_downs": 34
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 0,
+                "yards": -2,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": -2,
+                "first_downs": 0
+              },
+              "punts": {
+                "attempts": 2,
+                "yards": 84,
+                "avg_yards": 42.0,
+                "blocked": 0,
+                "longest": 58,
+                "touchbacks": 1,
+                "inside_20": 1,
+                "net_yards": 64,
+                "return_yards": 0,
+                "avg_net_yards": 32.0
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 500,
+                "completions": 333,
+                "cmp_pct": 66.6,
+                "yards": 4537,
+                "avg_yards": 9.074,
+                "sacks": 29,
+                "sack_yards": 246,
+                "touchdowns": 42,
+                "longest": 75,
+                "interceptions": 5,
+                "rating": 168.54,
+                "longest_touchdown": 75,
+                "air_yards": 14,
+                "redzone_attempts": 87,
+                "gross_yards": 4537,
+                "first_downs": 188,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 3,
+                "lost_fumbles": 1,
+                "own_rec": 3,
+                "own_rec_yards": 6,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 1,
+                "assists": 0,
+                "combined": 1,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "8f496f34-14e3-4ca7-958b-53f6da0b74d6",
+            "name": "Trojans",
+            "market": "USC",
+            "alias": "USC",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 1.222,
+                "attempts": 99,
+                "touchdowns": 11,
+                "yards": 121,
+                "longest": 46,
+                "longest_touchdown": 21,
+                "redzone_attempts": 23,
+                "tlost": 4,
+                "tlost_yards": -17,
+                "first_downs": 19
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 15,
+                "avg_yards": 15.0,
+                "longest": 15,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 15,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 388,
+                "completions": 266,
+                "cmp_pct": 68.557,
+                "yards": 3633,
+                "avg_yards": 9.363,
+                "sacks": 35,
+                "sack_yards": 272,
+                "touchdowns": 30,
+                "longest": 76,
+                "interceptions": 5,
+                "rating": 170.15,
+                "longest_touchdown": 76,
+                "air_yards": 0,
+                "redzone_attempts": 54,
+                "gross_yards": 3633,
+                "first_downs": 153,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 8,
+                "lost_fumbles": 3,
+                "own_rec": 6,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 6,
+                "pass_successes": 1,
+                "rush_attempts": 1,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-05 16:51:37 +0000 ended @ 2025-12-05 16:51:37 +0000"
+  },
+  "Jayden Daniels": {
+    "id": "85e9db64-4d69-4885-9fbb-d8a1c5e4a8c2",
+    "name": "Jayden Daniels",
+    "last_name": "Daniels",
+    "first_name": "Jayden",
+    "abbr_name": "J.Daniels",
+    "weight": 210.0,
+    "height": 76,
+    "position": "QB",
+    "birth_place": "San Bernardino, CA, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "seasons": [
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "00fd8418-0e62-4366-9a2a-d5f72850066c",
+            "name": "Sun Devils",
+            "market": "Arizona State",
+            "alias": "ASU",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 2.84,
+                "attempts": 125,
+                "touchdowns": 3,
+                "yards": 355,
+                "longest": 27,
+                "longest_touchdown": 17,
+                "redzone_attempts": 19,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 23
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 10,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 338,
+                "completions": 205,
+                "cmp_pct": 60.651,
+                "yards": 2943,
+                "avg_yards": 8.707,
+                "sacks": 32,
+                "sack_yards": 176,
+                "touchdowns": 17,
+                "longest": 86,
+                "interceptions": 2,
+                "rating": 149.2,
+                "longest_touchdown": 86,
+                "air_yards": 0,
+                "redzone_attempts": 37,
+                "gross_yards": 2943,
+                "first_downs": 115,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 2,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 2
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 3,
+                "rush_successes": 3,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "00fd8418-0e62-4366-9a2a-d5f72850066c",
+            "name": "Sun Devils",
+            "market": "Arizona State",
+            "alias": "ASU",
+            "statistics": {
+              "games_played": 4,
+              "games_started": 4,
+              "rushing": {
+                "avg_yards": 6.758,
+                "attempts": 33,
+                "touchdowns": 4,
+                "yards": 223,
+                "longest": 53,
+                "longest_touchdown": 53,
+                "redzone_attempts": 5,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 11
+              },
+              "passing": {
+                "attempts": 84,
+                "completions": 49,
+                "cmp_pct": 58.333,
+                "yards": 701,
+                "avg_yards": 8.345,
+                "sacks": 6,
+                "sack_yards": 43,
+                "touchdowns": 5,
+                "longest": 74,
+                "interceptions": 1,
+                "rating": 145.7,
+                "longest_touchdown": 74,
+                "air_yards": 0,
+                "redzone_attempts": 8,
+                "gross_yards": 701,
+                "first_downs": 28
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 0,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "00fd8418-0e62-4366-9a2a-d5f72850066c",
+            "name": "Sun Devils",
+            "market": "Arizona State",
+            "alias": "ASU",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 5.145,
+                "attempts": 138,
+                "touchdowns": 6,
+                "yards": 710,
+                "longest": 51,
+                "longest_touchdown": 51,
+                "redzone_attempts": 13,
+                "tlost": 7,
+                "tlost_yards": -20,
+                "first_downs": 45
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 301,
+                "completions": 197,
+                "cmp_pct": 65.449,
+                "yards": 2380,
+                "avg_yards": 7.907,
+                "sacks": 26,
+                "sack_yards": 167,
+                "touchdowns": 10,
+                "longest": 65,
+                "interceptions": 10,
+                "rating": 136.19,
+                "longest_touchdown": 65,
+                "air_yards": 14,
+                "redzone_attempts": 27,
+                "gross_yards": 2380,
+                "first_downs": 103,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 0,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 2,
+                "assists": 0,
+                "combined": 2,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "ffca4209-dbfa-4597-b25a-ed19bb351037",
+            "name": "Tigers",
+            "market": "LSU",
+            "alias": "LSU",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 14,
+              "rushing": {
+                "avg_yards": 4.758,
+                "attempts": 186,
+                "touchdowns": 11,
+                "yards": 885,
+                "longest": 37,
+                "longest_touchdown": 25,
+                "redzone_attempts": 38,
+                "tlost": 8,
+                "tlost_yards": -24,
+                "first_downs": 54
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 5,
+                "avg_yards": 5.0,
+                "longest": 5,
+                "touchdowns": 1,
+                "longest_touchdown": 5,
+                "yards_after_catch": 5,
+                "redzone_targets": 1,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 388,
+                "completions": 266,
+                "cmp_pct": 68.557,
+                "yards": 2913,
+                "avg_yards": 7.508,
+                "sacks": 43,
+                "sack_yards": 200,
+                "touchdowns": 17,
+                "longest": 54,
+                "interceptions": 3,
+                "rating": 144.53,
+                "longest_touchdown": 54,
+                "air_yards": 0,
+                "redzone_attempts": 45,
+                "gross_yards": 2913,
+                "first_downs": 144,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 1,
+                "assists": 0,
+                "combined": 1,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 1,
+                "rush_attempts": 1,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "ffca4209-dbfa-4597-b25a-ed19bb351037",
+            "name": "Tigers",
+            "market": "LSU",
+            "alias": "LSU",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 8.4,
+                "attempts": 135,
+                "touchdowns": 10,
+                "yards": 1134,
+                "longest": 85,
+                "longest_touchdown": 85,
+                "redzone_attempts": 33,
+                "tlost": 4,
+                "tlost_yards": -22,
+                "first_downs": 44
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 327,
+                "completions": 236,
+                "cmp_pct": 72.171,
+                "yards": 3812,
+                "avg_yards": 11.657,
+                "sacks": 22,
+                "sack_yards": 96,
+                "touchdowns": 40,
+                "longest": 86,
+                "interceptions": 4,
+                "rating": 208.01,
+                "longest_touchdown": 86,
+                "air_yards": 5,
+                "redzone_attempts": 45,
+                "gross_yards": 3812,
+                "first_downs": 156,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 1,
+                "misc_assists": 2,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-05 17:20:14 +0000 ended @ 2025-12-05 17:20:14 +0000"
+  },
+  "Drake Maye": {
+    "id": "37899236-cd21-4817-96b8-014a0e824260",
+    "name": "Drake Maye",
+    "last_name": "Maye",
+    "first_name": "Drake",
+    "abbr_name": "D.Maye",
+    "weight": 230.0,
+    "height": 76,
+    "position": "QB",
+    "birth_place": "Charlotte, NC, USA",
+    "status": "NWT",
+    "eligibility": "SO",
+    "seasons": [
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "79368b86-8bb0-4c66-8189-b836d039c207",
+            "name": "Tar Heels",
+            "market": "North Carolina",
+            "alias": "UNC",
+            "statistics": {
+              "games_played": 5,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 10.333,
+                "attempts": 6,
+                "touchdowns": 0,
+                "yards": 62,
+                "longest": 19,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "passing": {
+                "attempts": 10,
+                "completions": 7,
+                "cmp_pct": 70.0,
+                "yards": 89,
+                "avg_yards": 8.9,
+                "sacks": 1,
+                "sack_yards": 4,
+                "touchdowns": 1,
+                "longest": 46,
+                "interceptions": 0,
+                "rating": 177.76,
+                "longest_touchdown": 4,
+                "air_yards": 0,
+                "redzone_attempts": 1,
+                "gross_yards": 89,
+                "first_downs": 5,
+                "int_touchdowns": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "79368b86-8bb0-4c66-8189-b836d039c207",
+            "name": "Tar Heels",
+            "market": "North Carolina",
+            "alias": "UNC",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 14,
+              "rushing": {
+                "avg_yards": 3.793,
+                "attempts": 184,
+                "touchdowns": 7,
+                "yards": 698,
+                "longest": 42,
+                "longest_touchdown": 14,
+                "redzone_attempts": 40,
+                "tlost": 9,
+                "tlost_yards": -35,
+                "first_downs": 51
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 2,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 20,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 517,
+                "completions": 342,
+                "cmp_pct": 66.151,
+                "yards": 4321,
+                "avg_yards": 8.358,
+                "sacks": 40,
+                "sack_yards": 204,
+                "touchdowns": 38,
+                "longest": 80,
+                "interceptions": 7,
+                "rating": 157.9,
+                "longest_touchdown": 80,
+                "air_yards": 208,
+                "redzone_attempts": 108,
+                "gross_yards": 4321,
+                "first_downs": 195,
+                "int_touchdowns": 1
+              },
+              "fumbles": {
+                "fumbles": 8,
+                "lost_fumbles": 5,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 0,
+                "rush_attempts": 1,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "79368b86-8bb0-4c66-8189-b836d039c207",
+            "name": "Tar Heels",
+            "market": "North Carolina",
+            "alias": "UNC",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 4.009,
+                "attempts": 112,
+                "touchdowns": 9,
+                "yards": 449,
+                "longest": 56,
+                "longest_touchdown": 14,
+                "redzone_attempts": 25,
+                "tlost": 3,
+                "tlost_yards": -8,
+                "first_downs": 39
+              },
+              "punts": {
+                "attempts": 2,
+                "yards": 81,
+                "avg_yards": 40.5,
+                "blocked": 0,
+                "longest": 45,
+                "touchbacks": 1,
+                "inside_20": 1,
+                "net_yards": 61,
+                "return_yards": 0,
+                "avg_net_yards": 30.5
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 20,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 425,
+                "completions": 269,
+                "cmp_pct": 63.294,
+                "yards": 3608,
+                "avg_yards": 8.489,
+                "sacks": 29,
+                "sack_yards": 130,
+                "touchdowns": 24,
+                "longest": 77,
+                "interceptions": 9,
+                "rating": 149.01,
+                "longest_touchdown": 77,
+                "air_yards": 0,
+                "redzone_attempts": 54,
+                "gross_yards": 3608,
+                "first_downs": 144,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 3,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 1,
+                "rush_attempts": 1,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2026-01-27 00:33:10 +0000 ended @ 2026-01-27 00:33:10 +0000"
+  },
+  "Michael Penix": {
+    "id": "6a0a6511-0031-434f-b4fd-af0a4304d619",
+    "name": "Michael Penix Jr.",
+    "last_name": "Penix",
+    "first_name": "Michael",
+    "abbr_name": "M.Penix",
+    "weight": 213.0,
+    "height": 75,
+    "position": "QB",
+    "birth_place": "Cookeville, TN, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "name_suffix": "Jr.",
+    "seasons": [
+      {
+        "id": "34e9387d-2422-40dd-b289-572245995f35",
+        "year": 2018,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "fa0eb091-8e35-49c7-b00f-269794a99a61",
+            "name": "Hoosiers",
+            "market": "Indiana",
+            "alias": "IND",
+            "statistics": {
+              "games_played": 3,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 6.429,
+                "attempts": 7,
+                "touchdowns": 0,
+                "yards": 45,
+                "longest": 13,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 34,
+                "completions": 21,
+                "cmp_pct": 61.765,
+                "yards": 219,
+                "avg_yards": 6.441,
+                "sacks": 0,
+                "sack_yards": 0,
+                "touchdowns": 1,
+                "longest": 34,
+                "interceptions": 0,
+                "rating": 125.58,
+                "longest_touchdown": 9,
+                "air_yards": 0,
+                "redzone_attempts": 5,
+                "gross_yards": 219,
+                "first_downs": 12
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "fa0eb091-8e35-49c7-b00f-269794a99a61",
+            "name": "Hoosiers",
+            "market": "Indiana",
+            "alias": "IND",
+            "statistics": {
+              "games_played": 6,
+              "games_started": 6,
+              "rushing": {
+                "avg_yards": 5.409,
+                "attempts": 22,
+                "touchdowns": 2,
+                "yards": 119,
+                "longest": 24,
+                "longest_touchdown": 2,
+                "redzone_attempts": 7,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 8
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 0,
+                "yards": -26,
+                "avg_yards": 0.0,
+                "longest": -26,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": -26,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 160,
+                "completions": 110,
+                "cmp_pct": 68.75,
+                "yards": 1394,
+                "avg_yards": 8.713,
+                "sacks": 1,
+                "sack_yards": 6,
+                "touchdowns": 10,
+                "longest": 75,
+                "interceptions": 4,
+                "rating": 157.56,
+                "longest_touchdown": 75,
+                "air_yards": 0,
+                "redzone_attempts": 27,
+                "gross_yards": 1394,
+                "first_downs": 63
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "fa0eb091-8e35-49c7-b00f-269794a99a61",
+            "name": "Hoosiers",
+            "market": "Indiana",
+            "alias": "IND",
+            "statistics": {
+              "games_played": 6,
+              "games_started": 6,
+              "rushing": {
+                "avg_yards": 1.389,
+                "attempts": 18,
+                "touchdowns": 2,
+                "yards": 25,
+                "longest": 25,
+                "longest_touchdown": 1,
+                "redzone_attempts": 5,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 0,
+                "yards": -13,
+                "avg_yards": 0.0,
+                "longest": -13,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": -13,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 220,
+                "completions": 124,
+                "cmp_pct": 56.364,
+                "yards": 1645,
+                "avg_yards": 7.477,
+                "sacks": 7,
+                "sack_yards": 42,
+                "touchdowns": 14,
+                "longest": 68,
+                "interceptions": 4,
+                "rating": 136.54,
+                "longest_touchdown": 65,
+                "air_yards": 0,
+                "redzone_attempts": 39,
+                "gross_yards": 1645,
+                "first_downs": 74,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 0,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 1
+              },
+              "conversions": {
+                "pass_attempts": 0,
+                "pass_successes": 0,
+                "rush_attempts": 2,
+                "rush_successes": 2,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "fa0eb091-8e35-49c7-b00f-269794a99a61",
+            "name": "Hoosiers",
+            "market": "Indiana",
+            "alias": "IND",
+            "statistics": {
+              "games_played": 5,
+              "games_started": 5,
+              "rushing": {
+                "avg_yards": -1.412,
+                "attempts": 17,
+                "touchdowns": 2,
+                "yards": -24,
+                "longest": 9,
+                "longest_touchdown": 1,
+                "redzone_attempts": 7,
+                "tlost": 1,
+                "tlost_yards": -1,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 162,
+                "completions": 87,
+                "cmp_pct": 53.704,
+                "yards": 939,
+                "avg_yards": 5.796,
+                "sacks": 8,
+                "sack_yards": 54,
+                "touchdowns": 4,
+                "longest": 44,
+                "interceptions": 7,
+                "rating": 101.9,
+                "longest_touchdown": 16,
+                "air_yards": 0,
+                "redzone_attempts": 17,
+                "gross_yards": 939,
+                "first_downs": 48,
+                "int_touchdowns": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "7293edba-9810-444b-9df1-709c24d1c522",
+            "name": "Huskies",
+            "market": "Washington",
+            "alias": "WASH",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 2.629,
+                "attempts": 35,
+                "touchdowns": 4,
+                "yards": 92,
+                "longest": 30,
+                "longest_touchdown": 30,
+                "redzone_attempts": 11,
+                "tlost": 4,
+                "tlost_yards": -14,
+                "first_downs": 8
+              },
+              "penalties": {
+                "penalties": 4,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 554,
+                "completions": 362,
+                "cmp_pct": 65.343,
+                "yards": 4641,
+                "avg_yards": 8.377,
+                "sacks": 5,
+                "sack_yards": 38,
+                "touchdowns": 31,
+                "longest": 84,
+                "interceptions": 8,
+                "rating": 151.29,
+                "longest_touchdown": 84,
+                "air_yards": 6,
+                "redzone_attempts": 82,
+                "gross_yards": 4641,
+                "first_downs": 214,
+                "int_touchdowns": 2
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "7293edba-9810-444b-9df1-709c24d1c522",
+            "name": "Huskies",
+            "market": "Washington",
+            "alias": "WASH",
+            "statistics": {
+              "games_played": 15,
+              "games_started": 15,
+              "rushing": {
+                "avg_yards": 0.229,
+                "attempts": 35,
+                "touchdowns": 3,
+                "yards": 8,
+                "longest": 13,
+                "longest_touchdown": 5,
+                "redzone_attempts": 12,
+                "tlost": 1,
+                "tlost_yards": -9,
+                "first_downs": 9
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 1,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 555,
+                "completions": 363,
+                "cmp_pct": 65.405,
+                "yards": 4903,
+                "avg_yards": 8.834,
+                "sacks": 11,
+                "sack_yards": 83,
+                "touchdowns": 36,
+                "longest": 92,
+                "interceptions": 11,
+                "rating": 157.05,
+                "longest_touchdown": 92,
+                "air_yards": -7,
+                "redzone_attempts": 76,
+                "gross_yards": 4903,
+                "first_downs": 209,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 1,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 4,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2026-01-27 01:44:45 +0000 ended @ 2026-01-27 01:44:45 +0000"
+  },
+  "J.J. McCarthy": {
+    "id": "8d2fc425-6af1-4a61-b0db-53f5c94a6302",
+    "name": "J.J. McCarthy",
+    "last_name": "McCarthy",
+    "first_name": "J.J.",
+    "abbr_name": "J.McCarthy",
+    "weight": 202.0,
+    "height": 75,
+    "position": "QB",
+    "birth_place": "La Grange Park, IL, USA",
+    "status": "NWT",
+    "eligibility": "JR",
+    "seasons": [
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "d3e8c416-e643-4d5e-be9e-c598a150b234",
+            "name": "Wolverines",
+            "market": "Michigan",
+            "alias": "MICH",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 4.593,
+                "attempts": 27,
+                "touchdowns": 2,
+                "yards": 124,
+                "longest": 23,
+                "longest_touchdown": 5,
+                "redzone_attempts": 6,
+                "tlost": 3,
+                "tlost_yards": -12,
+                "first_downs": 10
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 1,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 59,
+                "completions": 34,
+                "cmp_pct": 57.627,
+                "yards": 516,
+                "avg_yards": 8.746,
+                "sacks": 3,
+                "sack_yards": 30,
+                "touchdowns": 5,
+                "longest": 69,
+                "interceptions": 2,
+                "rating": 152.28,
+                "longest_touchdown": 69,
+                "air_yards": 0,
+                "redzone_attempts": 5,
+                "gross_yards": 516,
+                "first_downs": 18,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "d3e8c416-e643-4d5e-be9e-c598a150b234",
+            "name": "Wolverines",
+            "market": "Michigan",
+            "alias": "MICH",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 4.371,
+                "attempts": 70,
+                "touchdowns": 5,
+                "yards": 306,
+                "longest": 39,
+                "longest_touchdown": 20,
+                "redzone_attempts": 13,
+                "tlost": 5,
+                "tlost_yards": -16,
+                "first_downs": 21
+              },
+              "penalties": {
+                "penalties": 3,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 322,
+                "completions": 208,
+                "cmp_pct": 64.596,
+                "yards": 2719,
+                "avg_yards": 8.444,
+                "sacks": 12,
+                "sack_yards": 107,
+                "touchdowns": 22,
+                "longest": 75,
+                "interceptions": 5,
+                "rating": 154.97,
+                "longest_touchdown": 75,
+                "air_yards": 21,
+                "redzone_attempts": 48,
+                "gross_yards": 2719,
+                "first_downs": 115,
+                "int_touchdowns": 3
+              },
+              "fumbles": {
+                "fumbles": 5,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 3,
+                "rush_attempts": 2,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "d3e8c416-e643-4d5e-be9e-c598a150b234",
+            "name": "Wolverines",
+            "market": "Michigan",
+            "alias": "MICH",
+            "statistics": {
+              "games_played": 15,
+              "games_started": 15,
+              "rushing": {
+                "avg_yards": 3.156,
+                "attempts": 64,
+                "touchdowns": 3,
+                "yards": 202,
+                "longest": 22,
+                "longest_touchdown": 21,
+                "redzone_attempts": 13,
+                "tlost": 2,
+                "tlost_yards": -4,
+                "first_downs": 19
+              },
+              "passing": {
+                "attempts": 332,
+                "completions": 240,
+                "cmp_pct": 72.289,
+                "yards": 2991,
+                "avg_yards": 9.009,
+                "sacks": 19,
+                "sack_yards": 153,
+                "touchdowns": 22,
+                "longest": 54,
+                "interceptions": 4,
+                "rating": 167.42,
+                "longest_touchdown": 54,
+                "air_yards": 5,
+                "redzone_attempts": 40,
+                "gross_yards": 2991,
+                "first_downs": 152,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 3,
+                "lost_fumbles": 0,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-05 16:17:45 +0000 ended @ 2025-12-05 16:17:45 +0000"
+  },
+  "Bo Nix": {
+    "id": "1cf14b57-2bb2-442b-8bea-d77bb9d6cf47",
+    "name": "Bo Nix",
+    "last_name": "Nix",
+    "first_name": "Bo",
+    "abbr_name": "B.Nix",
+    "weight": 217.0,
+    "height": 74,
+    "position": "QB",
+    "birth_place": "Arkadelphia, AR, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "seasons": [
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e5bbd1bd-0d65-4581-8d9c-58b33fd5ce62",
+            "name": "Tigers",
+            "market": "Auburn",
+            "alias": "AUB",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 3.227,
+                "attempts": 97,
+                "touchdowns": 7,
+                "yards": 313,
+                "longest": 30,
+                "longest_touchdown": 9,
+                "redzone_attempts": 14,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 26
+              },
+              "punts": {
+                "attempts": 3,
+                "yards": 112,
+                "avg_yards": 37.333,
+                "blocked": 0,
+                "longest": 42,
+                "touchbacks": 1,
+                "inside_20": 2,
+                "net_yards": 92,
+                "return_yards": 20,
+                "avg_net_yards": 30.667
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 377,
+                "completions": 217,
+                "cmp_pct": 57.56,
+                "yards": 2542,
+                "avg_yards": 6.743,
+                "sacks": 17,
+                "sack_yards": 118,
+                "touchdowns": 16,
+                "longest": 78,
+                "interceptions": 6,
+                "rating": 125.02,
+                "longest_touchdown": 49,
+                "air_yards": 0,
+                "redzone_attempts": 41,
+                "gross_yards": 2542,
+                "first_downs": 121
+              },
+              "fumbles": {
+                "fumbles": 5,
+                "lost_fumbles": 3,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 2
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e5bbd1bd-0d65-4581-8d9c-58b33fd5ce62",
+            "name": "Tigers",
+            "market": "Auburn",
+            "alias": "AUB",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 11,
+              "rushing": {
+                "avg_yards": 3.593,
+                "attempts": 108,
+                "touchdowns": 7,
+                "yards": 388,
+                "longest": 22,
+                "longest_touchdown": 15,
+                "redzone_attempts": 26,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 29
+              },
+              "punts": {
+                "attempts": 3,
+                "yards": 97,
+                "avg_yards": 32.333,
+                "blocked": 0,
+                "longest": 39,
+                "touchbacks": 0,
+                "inside_20": 2,
+                "net_yards": 97,
+                "return_yards": 0,
+                "avg_net_yards": 32.333
+              },
+              "penalties": {
+                "penalties": 4,
+                "yards": 3,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 357,
+                "completions": 214,
+                "cmp_pct": 59.944,
+                "yards": 2415,
+                "avg_yards": 6.765,
+                "sacks": 20,
+                "sack_yards": 101,
+                "touchdowns": 12,
+                "longest": 91,
+                "interceptions": 7,
+                "rating": 123.94,
+                "longest_touchdown": 91,
+                "air_yards": 0,
+                "redzone_attempts": 41,
+                "gross_yards": 2415,
+                "first_downs": 108,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 1,
+                "lost_fumbles": 0,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 2,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 1
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "e5bbd1bd-0d65-4581-8d9c-58b33fd5ce62",
+            "name": "Tigers",
+            "market": "Auburn",
+            "alias": "AUB",
+            "statistics": {
+              "games_played": 10,
+              "games_started": 10,
+              "rushing": {
+                "avg_yards": 2.947,
+                "attempts": 57,
+                "touchdowns": 4,
+                "yards": 168,
+                "longest": 23,
+                "longest_touchdown": 23,
+                "redzone_attempts": 13,
+                "tlost": 2,
+                "tlost_yards": -3,
+                "first_downs": 15
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 323,
+                "completions": 197,
+                "cmp_pct": 60.991,
+                "yards": 2294,
+                "avg_yards": 7.102,
+                "sacks": 13,
+                "sack_yards": 114,
+                "touchdowns": 11,
+                "longest": 71,
+                "interceptions": 3,
+                "rating": 130.03,
+                "longest_touchdown": 71,
+                "air_yards": 0,
+                "redzone_attempts": 32,
+                "gross_yards": 2294,
+                "first_downs": 108,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 2,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 0,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          },
+          {
+            "id": "5c218a3b-a013-4037-97b6-603c9502b701",
+            "name": "Ducks",
+            "market": "Oregon",
+            "alias": "ORE",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "5c218a3b-a013-4037-97b6-603c9502b701",
+            "name": "Ducks",
+            "market": "Oregon",
+            "alias": "ORE",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 5.73,
+                "attempts": 89,
+                "touchdowns": 14,
+                "yards": 510,
+                "longest": 80,
+                "longest_touchdown": 80,
+                "redzone_attempts": 35,
+                "tlost": 4,
+                "tlost_yards": -9,
+                "first_downs": 35
+              },
+              "receiving": {
+                "receptions": 2,
+                "targets": 2,
+                "yards": 36,
+                "avg_yards": 18.0,
+                "longest": 18,
+                "touchdowns": 1,
+                "longest_touchdown": 18,
+                "yards_after_catch": 36,
+                "redzone_targets": 1,
+                "air_yards": 0,
+                "first_downs": 2
+              },
+              "punts": {
+                "attempts": 2,
+                "yards": 67,
+                "avg_yards": 33.5,
+                "blocked": 0,
+                "longest": 34,
+                "touchbacks": 0,
+                "inside_20": 1,
+                "net_yards": 67,
+                "return_yards": 0,
+                "avg_net_yards": 33.5
+              },
+              "penalties": {
+                "penalties": 3,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 409,
+                "completions": 294,
+                "cmp_pct": 71.883,
+                "yards": 3593,
+                "avg_yards": 8.785,
+                "sacks": 5,
+                "sack_yards": 24,
+                "touchdowns": 29,
+                "longest": 67,
+                "interceptions": 7,
+                "rating": 165.65,
+                "longest_touchdown": 67,
+                "air_yards": 58,
+                "redzone_attempts": 89,
+                "gross_yards": 3593,
+                "first_downs": 151,
+                "int_touchdowns": 1
+              },
+              "defense": {
+                "tackles": 1,
+                "assists": 0,
+                "combined": 1,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 0,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0,
+                "sp_own_fumble_recoveries": 0,
+                "sp_opp_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 0,
+                "rush_attempts": 1,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "5c218a3b-a013-4037-97b6-603c9502b701",
+            "name": "Ducks",
+            "market": "Oregon",
+            "alias": "ORE",
+            "statistics": {
+              "games_played": 14,
+              "games_started": 14,
+              "rushing": {
+                "avg_yards": 4.333,
+                "attempts": 54,
+                "touchdowns": 6,
+                "yards": 234,
+                "longest": 44,
+                "longest_touchdown": 16,
+                "redzone_attempts": 14,
+                "tlost": 2,
+                "tlost_yards": -5,
+                "first_downs": 20
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 1,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 1,
+                "air_yards": 0,
+                "first_downs": 0
+              },
+              "punts": {
+                "attempts": 1,
+                "yards": 37,
+                "avg_yards": 37.0,
+                "blocked": 0,
+                "longest": 37,
+                "touchbacks": 0,
+                "inside_20": 1,
+                "net_yards": 37,
+                "return_yards": 0,
+                "avg_net_yards": 37.0
+              },
+              "passing": {
+                "attempts": 470,
+                "completions": 364,
+                "cmp_pct": 77.447,
+                "yards": 4508,
+                "avg_yards": 9.591,
+                "sacks": 5,
+                "sack_yards": 31,
+                "touchdowns": 45,
+                "longest": 84,
+                "interceptions": 3,
+                "rating": 188.33,
+                "longest_touchdown": 84,
+                "air_yards": 1,
+                "redzone_attempts": 83,
+                "gross_yards": 4508,
+                "first_downs": 193,
+                "int_touchdowns": 0
+              },
+              "conversions": {
+                "pass_attempts": 3,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2026-01-27 00:30:26 +0000 ended @ 2026-01-27 00:30:26 +0000"
+  },
+  "Spencer Rattler": {
+    "id": "2e52270c-9f33-4cc4-9603-8b2b215ae230",
+    "name": "Spencer Rattler",
+    "last_name": "Rattler",
+    "first_name": "Spencer",
+    "abbr_name": "S.Rattler",
+    "weight": 217.0,
+    "height": 73,
+    "position": "QB",
+    "birth_place": "Phoenix, AZ, USA",
+    "status": "NWT",
+    "eligibility": "SR",
+    "seasons": [
+      {
+        "id": "7010df8f-1e08-4021-91b8-ed09676c33de",
+        "year": 2013,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "b07de423-006d-4ae2-b9ed-532841ab1c4c",
+        "year": 2014,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "a89f105a-fe49-4331-b638-4ee12dae0493",
+        "year": 2019,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 7.667,
+                "attempts": 3,
+                "touchdowns": 0,
+                "yards": 23,
+                "longest": 8,
+                "longest_touchdown": 0,
+                "redzone_attempts": 0,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 11,
+                "completions": 7,
+                "cmp_pct": 63.636,
+                "yards": 81,
+                "avg_yards": 7.364,
+                "sacks": 0,
+                "sack_yards": 0,
+                "touchdowns": 1,
+                "longest": 33,
+                "interceptions": 0,
+                "rating": 155.49,
+                "longest_touchdown": 9,
+                "air_yards": 0,
+                "redzone_attempts": 1,
+                "gross_yards": 81,
+                "first_downs": 4
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "17d91be7-4bd3-4407-80e2-eca205c9284a",
+        "year": 2020,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 11,
+              "games_started": 11,
+              "rushing": {
+                "avg_yards": 1.975,
+                "attempts": 81,
+                "touchdowns": 6,
+                "yards": 160,
+                "longest": 25,
+                "longest_touchdown": 9,
+                "redzone_attempts": 22,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 14
+              },
+              "receiving": {
+                "receptions": 0,
+                "targets": 0,
+                "yards": 0,
+                "avg_yards": 0.0,
+                "longest": 0,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 0,
+                "redzone_targets": 0,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "passing": {
+                "attempts": 317,
+                "completions": 214,
+                "cmp_pct": 67.508,
+                "yards": 3031,
+                "avg_yards": 9.562,
+                "sacks": 22,
+                "sack_yards": 132,
+                "touchdowns": 28,
+                "longest": 61,
+                "interceptions": 7,
+                "rating": 172.56,
+                "longest_touchdown": 61,
+                "air_yards": 0,
+                "redzone_attempts": 54,
+                "gross_yards": 3031,
+                "first_downs": 139,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 6,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "defense": {
+                "tackles": 0,
+                "assists": 0,
+                "combined": 0,
+                "sacks": 0.0,
+                "sack_yards": 0.0,
+                "interceptions": 0,
+                "passes_defended": 0,
+                "forced_fumbles": 0,
+                "fumble_recoveries": 0,
+                "qb_hits": 0,
+                "tloss": 0.0,
+                "tloss_yards": 0.0,
+                "safeties": 0,
+                "sp_tackles": 0,
+                "sp_assists": 0,
+                "sp_forced_fumbles": 0,
+                "sp_fumble_recoveries": 0,
+                "sp_blocks": 0,
+                "misc_tackles": 1,
+                "misc_assists": 0,
+                "misc_forced_fumbles": 0,
+                "misc_fumble_recoveries": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1132b13-2c29-4e6d-9011-b627c7fd9a17",
+        "year": 2021,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "7b1dbcdb-34b2-479e-9b6b-4c7221e7f743",
+            "name": "Gamecocks",
+            "market": "South Carolina",
+            "alias": "SCAR",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0
+            }
+          },
+          {
+            "id": "242f21d8-7372-4359-a04f-4d467ead22d6",
+            "name": "Sooners",
+            "market": "Oklahoma",
+            "alias": "OKLA",
+            "statistics": {
+              "games_played": 9,
+              "games_started": 6,
+              "rushing": {
+                "avg_yards": 1.791,
+                "attempts": 43,
+                "touchdowns": 3,
+                "yards": 77,
+                "longest": 22,
+                "longest_touchdown": 2,
+                "redzone_attempts": 11,
+                "tlost": 2,
+                "tlost_yards": -8,
+                "first_downs": 8
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 15,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 187,
+                "completions": 140,
+                "cmp_pct": 74.866,
+                "yards": 1483,
+                "avg_yards": 7.93,
+                "sacks": 13,
+                "sack_yards": 62,
+                "touchdowns": 11,
+                "longest": 50,
+                "interceptions": 5,
+                "rating": 155.55,
+                "longest_touchdown": 42,
+                "air_yards": 0,
+                "redzone_attempts": 31,
+                "gross_yards": 1483,
+                "first_downs": 71,
+                "int_touchdowns": 0
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 1,
+                "own_rec": 1,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ff53e5e4-10ef-4842-a0b7-b489956fa07e",
+        "year": 2022,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "7b1dbcdb-34b2-479e-9b6b-4c7221e7f743",
+            "name": "Gamecocks",
+            "market": "South Carolina",
+            "alias": "SCAR",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 0.753,
+                "attempts": 73,
+                "touchdowns": 3,
+                "yards": 55,
+                "longest": 17,
+                "longest_touchdown": 7,
+                "redzone_attempts": 9,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 9
+              },
+              "receiving": {
+                "receptions": 1,
+                "targets": 1,
+                "yards": 15,
+                "avg_yards": 15.0,
+                "longest": 15,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 15,
+                "redzone_targets": 1,
+                "air_yards": 0,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 5,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 399,
+                "completions": 264,
+                "cmp_pct": 66.165,
+                "yards": 3026,
+                "avg_yards": 7.584,
+                "sacks": 31,
+                "sack_yards": 189,
+                "touchdowns": 18,
+                "longest": 72,
+                "interceptions": 12,
+                "rating": 138.74,
+                "longest_touchdown": 72,
+                "air_yards": 2,
+                "redzone_attempts": 60,
+                "gross_yards": 3026,
+                "first_downs": 114,
+                "int_touchdowns": 1
+              },
+              "fumbles": {
+                "fumbles": 7,
+                "lost_fumbles": 4,
+                "own_rec": 2,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 2,
+                "pass_successes": 1,
+                "rush_attempts": 1,
+                "rush_successes": 1,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f58c6dbf-9dfe-487e-8b0b-af66af887206",
+        "year": 2023,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "7b1dbcdb-34b2-479e-9b6b-4c7221e7f743",
+            "name": "Gamecocks",
+            "market": "South Carolina",
+            "alias": "SCAR",
+            "statistics": {
+              "games_played": 12,
+              "games_started": 12,
+              "rushing": {
+                "avg_yards": 1.072,
+                "attempts": 97,
+                "touchdowns": 4,
+                "yards": 104,
+                "longest": 28,
+                "longest_touchdown": 6,
+                "redzone_attempts": 20,
+                "tlost": 3,
+                "tlost_yards": -7,
+                "first_downs": 19
+              },
+              "penalties": {
+                "penalties": 4,
+                "yards": 0,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 399,
+                "completions": 275,
+                "cmp_pct": 68.922,
+                "yards": 3186,
+                "avg_yards": 7.985,
+                "sacks": 40,
+                "sack_yards": 297,
+                "touchdowns": 19,
+                "longest": 76,
+                "interceptions": 8,
+                "rating": 147.7,
+                "longest_touchdown": 76,
+                "air_yards": 52,
+                "redzone_attempts": 44,
+                "gross_yards": 3186,
+                "first_downs": 133,
+                "int_touchdowns": 1
+              },
+              "fumbles": {
+                "fumbles": 2,
+                "lost_fumbles": 0,
+                "own_rec": 4,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2026-01-27 00:49:27 +0000 ended @ 2026-01-27 00:49:27 +0000"
+  },
+  "Ryan Finley": {
+    "id": "c87912cc-b14c-4965-8acf-6c55ff088127",
+    "name": "Ryan Finley",
+    "jersey": "0",
+    "last_name": "Finley",
+    "first_name": "Ryan",
+    "abbr_name": "R.Finley",
+    "weight": 212.0,
+    "height": 76,
+    "position": "QB",
+    "birth_place": "Phoenix, AZ, USA",
+    "status": "NWT",
+    "eligibility": "GR",
+    "seasons": [
+      {
+        "id": "7010df8f-1e08-4021-91b8-ed09676c33de",
+        "year": 2013,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "35aa5295-ad07-4b95-aad2-63d1d5bf9009",
+            "name": "Broncos",
+            "market": "Boise State",
+            "alias": "BSU",
+            "statistics": {
+              "games_played": 0,
+              "games_started": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "b07de423-006d-4ae2-b9ed-532841ab1c4c",
+        "year": 2014,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "35aa5295-ad07-4b95-aad2-63d1d5bf9009",
+            "name": "Broncos",
+            "market": "Boise State",
+            "alias": "BSU",
+            "statistics": {
+              "games_played": 4,
+              "games_started": 0,
+              "rushing": {
+                "avg_yards": 4.429,
+                "attempts": 7,
+                "touchdowns": 0,
+                "yards": 31,
+                "longest": 38,
+                "longest_touchdown": 0,
+                "redzone_attempts": 1,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 2
+              },
+              "passing": {
+                "attempts": 27,
+                "completions": 12,
+                "cmp_pct": 44.444,
+                "yards": 161,
+                "avg_yards": 5.963,
+                "sacks": 2,
+                "sack_yards": 26,
+                "touchdowns": 2,
+                "longest": 43,
+                "interceptions": 1,
+                "rating": 111.57,
+                "longest_touchdown": 10,
+                "air_yards": 0,
+                "redzone_attempts": 5,
+                "gross_yards": 161,
+                "first_downs": 8
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "23e2cfa5-e19f-4ec1-bc60-b568212d91e5",
+        "year": 2015,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "35aa5295-ad07-4b95-aad2-63d1d5bf9009",
+            "name": "Broncos",
+            "market": "Boise State",
+            "alias": "BSU",
+            "statistics": {
+              "games_played": 3,
+              "games_started": 3,
+              "rushing": {
+                "avg_yards": 1.909,
+                "attempts": 22,
+                "touchdowns": 0,
+                "yards": 42,
+                "longest": 15,
+                "longest_touchdown": 0,
+                "redzone_attempts": 3,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 3
+              },
+              "passing": {
+                "attempts": 70,
+                "completions": 46,
+                "cmp_pct": 65.714,
+                "yards": 485,
+                "avg_yards": 6.929,
+                "sacks": 6,
+                "sack_yards": 32,
+                "touchdowns": 1,
+                "longest": 43,
+                "interceptions": 4,
+                "rating": 117.2,
+                "longest_touchdown": 29,
+                "air_yards": 0,
+                "redzone_attempts": 4,
+                "gross_yards": 485,
+                "first_downs": 25
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9ff91613-d2c8-4922-9f51-2ce706f5ac0b",
+        "year": 2016,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "034ac81a-311c-49f4-8c45-ddcef7777bdc",
+            "name": "Wolfpack",
+            "market": "North Carolina State",
+            "alias": "NCST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 1.27,
+                "attempts": 74,
+                "touchdowns": 1,
+                "yards": 94,
+                "longest": 17,
+                "longest_touchdown": 15,
+                "redzone_attempts": 13,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 13
+              },
+              "passing": {
+                "attempts": 402,
+                "completions": 243,
+                "cmp_pct": 60.448,
+                "yards": 3055,
+                "avg_yards": 7.6,
+                "sacks": 15,
+                "sack_yards": 99,
+                "touchdowns": 18,
+                "longest": 80,
+                "interceptions": 8,
+                "rating": 135.08,
+                "longest_touchdown": 80,
+                "air_yards": 0,
+                "redzone_attempts": 38,
+                "gross_yards": 3055,
+                "first_downs": 143
+              },
+              "fumbles": {
+                "fumbles": 7,
+                "lost_fumbles": 1,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8e84b9ee-9b8e-45ef-b61f-0dfd26ff37e6",
+        "year": 2017,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "034ac81a-311c-49f4-8c45-ddcef7777bdc",
+            "name": "Wolfpack",
+            "market": "North Carolina State",
+            "alias": "NCST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 2.812,
+                "attempts": 69,
+                "touchdowns": 3,
+                "yards": 194,
+                "longest": 46,
+                "longest_touchdown": 6,
+                "redzone_attempts": 15,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 21
+              },
+              "receiving": {
+                "receptions": 2,
+                "targets": 2,
+                "yards": 18,
+                "avg_yards": 9.0,
+                "longest": 20,
+                "touchdowns": 0,
+                "longest_touchdown": 0,
+                "yards_after_catch": 2,
+                "redzone_targets": 0,
+                "air_yards": 16,
+                "first_downs": 1
+              },
+              "penalties": {
+                "penalties": 1,
+                "yards": 5,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 479,
+                "completions": 312,
+                "cmp_pct": 65.136,
+                "yards": 3518,
+                "avg_yards": 7.344,
+                "sacks": 13,
+                "sack_yards": 81,
+                "touchdowns": 17,
+                "longest": 79,
+                "interceptions": 6,
+                "rating": 136.04,
+                "longest_touchdown": 71,
+                "air_yards": 0,
+                "redzone_attempts": 61,
+                "gross_yards": 3518,
+                "first_downs": 165
+              },
+              "fumbles": {
+                "fumbles": 6,
+                "lost_fumbles": 2,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 1,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 4,
+                "pass_successes": 2,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "34e9387d-2422-40dd-b289-572245995f35",
+        "year": 2018,
+        "type": "REG",
+        "name": "REG",
+        "teams": [
+          {
+            "id": "034ac81a-311c-49f4-8c45-ddcef7777bdc",
+            "name": "Wolfpack",
+            "market": "North Carolina State",
+            "alias": "NCST",
+            "statistics": {
+              "games_played": 13,
+              "games_started": 13,
+              "rushing": {
+                "avg_yards": 0.5,
+                "attempts": 42,
+                "touchdowns": 1,
+                "yards": 21,
+                "longest": 9,
+                "longest_touchdown": 2,
+                "redzone_attempts": 7,
+                "tlost": 0,
+                "tlost_yards": 0,
+                "first_downs": 13
+              },
+              "penalties": {
+                "penalties": 2,
+                "yards": 9,
+                "first_downs": 0
+              },
+              "passing": {
+                "attempts": 484,
+                "completions": 326,
+                "cmp_pct": 67.355,
+                "yards": 3928,
+                "avg_yards": 8.116,
+                "sacks": 11,
+                "sack_yards": 73,
+                "touchdowns": 25,
+                "longest": 74,
+                "interceptions": 11,
+                "rating": 148.03,
+                "longest_touchdown": 74,
+                "air_yards": 0,
+                "redzone_attempts": 65,
+                "gross_yards": 3928,
+                "first_downs": 195
+              },
+              "fumbles": {
+                "fumbles": 4,
+                "lost_fumbles": 0,
+                "own_rec": 0,
+                "own_rec_yards": 0,
+                "opp_rec": 0,
+                "opp_rec_yards": 0,
+                "out_of_bounds": 0,
+                "forced_fumbles": 0,
+                "own_rec_tds": 0,
+                "opp_rec_tds": 0,
+                "ez_rec_tds": 0
+              },
+              "conversions": {
+                "pass_attempts": 1,
+                "pass_successes": 1,
+                "rush_attempts": 0,
+                "rush_successes": 0,
+                "receive_attempts": 0,
+                "receive_successes": 0,
+                "defense_attempts": 0,
+                "defense_successes": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "_comment": "Generation started @ 2025-12-06 17:03:54 +0000 ended @ 2025-12-06 17:03:54 +0000"
   }
 }

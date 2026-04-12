@@ -32,6 +32,7 @@ Output: data/raw/cfbd_raw_stats.json   (raw API responses, cached)
 import os
 import json
 import time
+from typing import Any, cast
 import requests
 import pandas as pd
 from rapidfuzz import process, fuzz
@@ -51,6 +52,7 @@ BASE = "https://api.collegefootballdata.com"
 COHORT_PATH = "data/processed/qb_cohort.csv"
 RAW_CACHE = "data/raw/cfbd_raw_stats.json"
 OUT_PATH = "data/processed/qb_college_features.csv"
+QB_RECRUIT_POSITIONS = {"QB", "PRO", "DUAL"}
 
 
 def cfbd_get(endpoint: str, params: dict) -> list:
@@ -79,87 +81,139 @@ def match_player(target: str, candidates: list[str], threshold: int = 80) -> str
     return None
 
 
+def is_qb_recruit(row: dict[str, Any]) -> bool:
+    position = str(row.get("position", "")).strip().upper()
+    return position in QB_RECRUIT_POSITIONS or "QB" in position
+
+
+def load_cache() -> dict[str, Any]:
+    if not os.path.exists(RAW_CACHE):
+        return {}
+
+    print(f"Loading cached CFBD data from {RAW_CACHE}")
+    with open(RAW_CACHE) as f:
+        cache = json.load(f)
+
+    if isinstance(cache, dict):
+        return cache
+    return {}
+
+
+def save_cache(cache: dict[str, Any]) -> dict[str, Any]:
+    import numpy as np
+
+    def make_serializable(obj: Any) -> Any:
+        if isinstance(obj, dict):
+            obj_dict = cast(dict[Any, Any], obj)
+            return {
+                (int(k) if isinstance(k, np.integer) else k): make_serializable(v)
+                for k, v in obj_dict.items()
+            }
+        if isinstance(obj, list):
+            return [make_serializable(i) for i in obj]
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        return obj
+
+    cache_clean = make_serializable(cache)
+    with open(RAW_CACHE, "w") as f:
+        json.dump(cache_clean, f)
+    print(f"\nCached to {RAW_CACHE}")
+    return {str(k): v for k, v in cache_clean.items()}
+
+
 # ---------------------------------------------------------------------------
 # Pull raw data from CFBD (or load from cache)
 # ---------------------------------------------------------------------------
 
 def fetch_all_seasons(years: list[int]) -> dict:
     """Fetch all CFBD data for the given years. Cache to avoid re-pulling."""
-    if os.path.exists(RAW_CACHE):
-        print(f"Loading cached CFBD data from {RAW_CACHE}")
-        with open(RAW_CACHE) as f:
-            return json.load(f)
-
-    cache = {}
+    cache = load_cache()
+    updated = False
     for year in years:
+        year_key = str(year)
+        year_cache = cache.setdefault(year_key, {})
+        year_sections = ("passing", "rushing", "ppa", "usage")
+        if all(year_cache.get(key) for key in year_sections):
+            continue
+
         print(f"  Fetching {year}...")
-        cache[year] = {}
 
         # 1. Traditional passing stats
         try:
-            cache[year]["passing"] = cfbd_get(
+            year_cache["passing"] = cfbd_get(
                 "stats/player/season",
                 {"year": year, "seasonType": "regular", "category": "passing"}
             )
-            print(f"    passing: {len(cache[year]['passing'])} rows")
+            updated = True
+            print(f"    passing: {len(year_cache['passing'])} rows")
         except Exception as e:
             print(f"    passing ERROR: {e}")
-            cache[year]["passing"] = []
+            year_cache["passing"] = []
 
         # 2. Rushing stats
         try:
-            cache[year]["rushing"] = cfbd_get(
+            year_cache["rushing"] = cfbd_get(
                 "stats/player/season",
                 {"year": year, "seasonType": "regular", "category": "rushing"}
             )
-            print(f"    rushing: {len(cache[year]['rushing'])} rows")
+            updated = True
+            print(f"    rushing: {len(year_cache['rushing'])} rows")
         except Exception as e:
             print(f"    rushing ERROR: {e}")
-            cache[year]["rushing"] = []
+            year_cache["rushing"] = []
 
         # 3. PPA (Predicted Points Added)
         try:
-            cache[year]["ppa"] = cfbd_get(
+            year_cache["ppa"] = cfbd_get(
                 "ppa/players/season",
                 {"year": year, "threshold": 100}
             )
-            print(f"    ppa: {len(cache[year]['ppa'])} rows")
+            updated = True
+            print(f"    ppa: {len(year_cache['ppa'])} rows")
         except Exception as e:
             print(f"    ppa ERROR: {e}")
-            cache[year]["ppa"] = []
+            year_cache["ppa"] = []
 
         # 4. Player usage (down-by-down, explosiveness)
         try:
-            cache[year]["usage"] = cfbd_get(
+            year_cache["usage"] = cfbd_get(
                 "player/usage",
                 {"year": year, "position": "QB"}
             )
-            print(f"    usage: {len(cache[year]['usage'])} rows")
+            updated = True
+            print(f"    usage: {len(year_cache['usage'])} rows")
         except Exception as e:
             print(f"    usage ERROR: {e}")
-            cache[year]["usage"] = []
+            year_cache["usage"] = []
 
     # 5. Recruiting ratings (pull a wide range to cover all cohort QBs)
     # Recruiting class year is typically draft_year - 3 or - 4
-    print("  Fetching recruiting data...")
-    recruit_years = list(range(int(min(years)) - 2, int(max(years)) + 1))
-    cache["recruiting"] = []
-    for ry in recruit_years:
-        try:
-            rows = cfbd_get("recruiting/players", {"year": ry, "position": "Pro-Style QB"})
-            cache["recruiting"].extend(rows)
-            rows2 = cfbd_get("recruiting/players", {"year": ry, "position": "Dual Threat QB"})
-            cache["recruiting"].extend(rows2)
-        except Exception as e:
-            print(f"    recruiting {ry} ERROR: {e}")
-    print(f"    recruiting: {len(cache['recruiting'])} total recruits")
+    if cache.get("recruiting"):
+        print(f"  Using cached recruiting data ({len(cache['recruiting'])} rows)")
+    else:
+        print("  Fetching recruiting data...")
+        recruit_years = list(range(int(min(years)) - 2, int(max(years)) + 1))
+        fetched_recruits: list[dict[str, Any]] = []
+        for ry in recruit_years:
+            try:
+                rows = cfbd_get("recruiting/players", {"year": ry})
+                qb_rows = [r for r in rows if is_qb_recruit(r)]
+                fetched_recruits.extend(qb_rows)
+                updated = True
+                print(f"    {ry}: {len(qb_rows)} QB recruits")
+            except Exception as e:
+                print(f"    recruiting {ry} ERROR: {e}")
+        if fetched_recruits:
+            cache["recruiting"] = fetched_recruits
+        print(f"    recruiting: {len(fetched_recruits)} total recruits")
 
-    # Convert np.int64 keys to plain int so json.dump works
-    cache_serializable = {int(k) if isinstance(k, (int, float)) else k: v for k, v in cache.items()}
-    with open(RAW_CACHE, "w") as f:
-        json.dump(cache_serializable, f)
-    print(f"\nCached to {RAW_CACHE}")
-    return cache
+    if updated:
+        return save_cache(cache)
+
+    return {str(k): v for k, v in cache.items()}
 
 
 # ---------------------------------------------------------------------------
@@ -285,15 +339,31 @@ def fetch_sp_ratings(team: str, year: int) -> dict | None:
     return None
 
 
-def extract_recruiting(name: str, cache: dict) -> dict:
+def extract_recruiting(name: str, college: str, draft_year: int, cache: dict) -> dict:
     rows = cache.get("recruiting", [])
-    players = [r.get("name", "") for r in rows]
-    matched = match_player(name, players)
-    if not matched:
+
+    def recruiting_score(row: dict[str, Any]) -> tuple[int, int, int]:
+        name_score = int(
+            fuzz.token_sort_ratio(normalize_name(name), normalize_name(row.get("name", "")))
+        )
+        commit_score = int(
+            fuzz.token_sort_ratio(str(college).lower(), str(row.get("committedTo", "")).lower())
+        )
+        recruit_year = row.get("year")
+        try:
+            year_gap = abs(int(recruit_year) - (draft_year - 4))
+        except (TypeError, ValueError):
+            year_gap = 99
+        return (name_score, commit_score, -year_gap)
+
+    candidates = [row for row in rows if recruiting_score(row)[0] >= 80]
+    if not candidates:
         return {}
-    row = next((r for r in rows if r.get("name") == matched), None)
-    if not row:
-        return {}
+
+    college_matched = [row for row in candidates if recruiting_score(row)[1] >= 80]
+    pool = college_matched or candidates
+    row = max(pool, key=recruiting_score)
+
     return {
         "recruit_stars":     row.get("stars"),
         "recruit_rating":    row.get("rating"),
@@ -430,7 +500,7 @@ def main():
             season_features.append(merged)
 
         agg = aggregate_college(season_features)
-        recruiting = extract_recruiting(name, cache)
+        recruiting = extract_recruiting(name, qb.get("college", ""), draft_year, cache)
         if recruiting:
             print(f"  recruiting: {recruiting.get('recruit_stars')}★ | rating={recruiting.get('recruit_rating')} | rank={recruiting.get('recruit_ranking')}")
         else:
@@ -446,9 +516,14 @@ def main():
         results.append(row)
 
     df = pd.DataFrame(results)
-    df.to_csv(OUT_PATH, index=False)
-
     found = df["col_seasons_found"].gt(0).sum()
+    if found == 0:
+        raise RuntimeError(
+            "No college data matched. Refusing to overwrite existing output. "
+            "Populate the CFBD cache or rerun with network access."
+        )
+
+    df.to_csv(OUT_PATH, index=False)
     print(f"\nMatched {found}/{len(df)} QBs to college data")
     print(f"Saved to {OUT_PATH}")
     print(f"\nFeature columns ({len([c for c in df.columns if c.startswith('col_')])}):")

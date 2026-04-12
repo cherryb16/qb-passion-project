@@ -2,3 +2,10 @@ requests
 beautifulsoup4
 pandas
 lxml
+rapidfuzz
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+pyright

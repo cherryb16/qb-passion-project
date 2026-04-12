@@ -6,11 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 STRAT 412 Passion Project — **QB Translation: Which college QB traits predict early NFL success?**
 
-For QBs drafted 2008–2023 who had ≥2 college seasons and played ≥16 NFL games in their first two seasons, run a regression to identify which observable college characteristics best predict early NFL efficiency.
+For QBs drafted 2018–2024 who played ≥16 NFL games and made ≥8 starts in their first two seasons, build a composite NFL success score and identify which college traits best predict it.
 
 **Managerial framing**: "If I'm an NFL GM, which college QB stats should I prioritize when drafting?"
 
-**Outcome variable**: NFL efficiency metrics (ANY/A, passer rating, pressure rate) from first two NFL seasons.
+**Analysis approach**: Composite NFL success score (0–100) combining accuracy, efficiency, pressure handling, and rushing. PCA + K-Means clustering to identify QB archetypes. Recruitment bias indicator (recruit prestige vs. actual NFL output).
+
+**Three-platform deliverable**: Python (data pipeline + scoring), SQL (querying/aggregation), Tableau (dashboards).
 
 **Final deliverable deadline**: April 15, 2026 — slide deck, data files, YouTube presentation to Learning Suite.
 
@@ -20,56 +22,76 @@ For QBs drafted 2008–2023 who had ≥2 college seasons and played ≥16 NFL ga
 
 | Source | What | How Accessed |
 |---|---|---|
-| Pro-Football-Reference | NFL draft history 2008–2023 | Manually downloaded XLS exports → `data/raw/draft/` |
-| Pro-Football-Reference | NFL advanced passing stats 2008–2025 | Manually downloaded XLS exports → `data/raw/passing/` |
-| College Football Data API | College stats: PPA, usage, explosiveness, traditional passing/rushing | Free API (cfbd key required) — `scripts/04_college_stats.py` |
-| Sportsradar NCAAFB v7 | Backup/supplemental college stats | API key in env var `SPORTRADAR_KEY` |
+| Pro-Football-Reference | NFL draft history 2008–2024 | Manually downloaded XLS → `data/raw/draft/{year}-draft.xls` |
+| Pro-Football-Reference | NFL passing stats (advanced + standard) 2018–2025 | Manually downloaded XLS → `data/raw/passing/{year}-advanced.xls` / `{year}-standard.xls` |
+| Pro-Football-Reference | NFL rushing stats 2018–2025 | Manually downloaded XLS → `data/raw/rushing/{year}-rushing.xls` |
+| College Football Data API (CFBD) | College passing/rushing, PPA, usage, team win %, recruiting | Free API — key in `.env.local` as `CFBD_KEY` |
+| Sportradar NCAAFB v7 | College sack data (supplemental) | Trial API — key in `.env.local` as `SPORTRADAR_KEY` |
 
-## Data Status
+---
 
-### Done
-- `data/raw/draft/sportsref_download*.xls` — PFR draft files, 2008–2023 (16 files, manually downloaded)
-- `data/raw/passing/sportsref_download*.xls` — PFR NFL advanced passing stats, 2008–2025 (manually downloaded)
-- `data/raw/qbs_drafted.csv` — 187 drafted QBs, 2008–2023 → `01_draft_list.py`
-- `data/raw/nfl_passing_all.csv` — 1,857 player-seasons of NFL passing stats → `02_nfl_passing_stats.py`
-- `data/processed/qb_cohort.csv` — 31 QBs (2017–2023 draft, ≥16 NFL games, ≥8 starts, advanced stats era) → `03_build_cohort.py`
+## Current Data Status
 
-### In Progress
-- **College stats** — `04_college_stats.py` pulls from CFBD API (needs `CFBD_KEY` env var)
-  - Fetches per season year (8 calls total): passing stats, rushing stats, PPA, player usage
-  - Caches raw responses to `data/raw/cfbd_raw_stats.json`
-  - Outputs `data/processed/qb_college_features.csv`
+### Pipeline: fully working — runs clean 01 → 09
 
-### Still Needed
-- **Feature engineering**: Merge cohort NFL outcomes with college features → single modelling table
-- **Regression model**: Linear regression in Python, feature importance/coefficients
-- **Tableau dashboard**: QB radar profiles, correlation plots, filter by draft round/conference
+| File | Contents | Coverage |
+|------|----------|----------|
+| `data/raw/qbs_drafted.csv` | 198 drafted QBs, 2008–2024 | Complete |
+| `data/raw/nfl_passing_all.csv` | 1,766 player-seasons, 2018–2025 | Complete |
+| `data/raw/nfl_rushing_all.csv` | 2,921 player-seasons, 2018–2025 | Complete |
+| `data/raw/sportradar_profiles.json` | Career profiles for 44 QBs | 44/44 cohort QBs |
+| `data/processed/qb_cohort.csv` | 40 QBs with full NFL stats + rushing | 40/40 all outcome cols |
+| `data/processed/qb_college_features.csv` | College stats + recruit ratings | 39/40 CFBD, 34/40 recruit ratings |
+| `data/processed/qb_model_table.csv` | 40 QBs × 48 cols, all sources merged | Ready for analysis |
+| `data/processed/qb_composite_scores.csv` | 0–100 NFL success score + recruit bias | 40/40 scored |
+| `data/processed/qb_clusters.csv` | PCA scores + K-Means cluster assignments | 40/40 |
+| `data/qb_analysis.db` | SQLite DB — 5 tables, 10 analytical queries | Complete |
 
-### Known Data Gaps
-- NFL advanced stats (pressure %, air yards, accuracy) only available 2018–2025; older seasons have standard stats only
-- College CFBD data coverage: traditional stats back to ~2004, PPA/usage back to ~2014 (covers all 31 cohort QBs)
-- 2020 COVID year: some 2021 draftees had an extra eligibility year — senior season may be 2021 not 2020
+### Known Data Gaps (not fixable without paid API tier)
+- `col_explosiveness` and `col_sos_rating` — CFBD free tier returns null for SP+ fields
+- Recruit ratings missing for 6 QBs (Josh Allen, Bailey Zappe, Desmond Ridder, Aidan O'Connell, Mason Rudolph, Ryan Finley) — small-school QBs not tracked by 247Sports
+
+---
+
+## What Still Needs to Be Done
+
+### 1. Build Tableau Dashboards
+Tableau workbook should include at least:
+- **QB Radar Chart**: multi-axis chart showing each QB's normalized scores across all composite components
+- **Recruit Bias Scatter**: recruit rating (x) vs. composite NFL score (y) — label outliers
+- **College → NFL Correlation**: scatter plots of top college predictors vs. NFL composite score
+- **Archetype Dashboard**: cluster membership map, filter by draft year / conference / round
+- Data source: connect directly to `data/processed/qb_model_table.csv` and `qb_composite_scores.csv`
+
+### 2. Fix CFBD Recruiting Data (optional improvement)
+- The CFBD `/recruiting/players` endpoint returned 0 results — likely a position string mismatch
+- Try fetching without a position filter and filtering client-side (same fix applied in script 04 to all-QB pull)
+- Would improve recruit_rating coverage from 34/40 to potentially 38–40/40
 
 ---
 
 ## Running the Pipeline
 
-Scripts run in order. Activate the shared venv first:
+Activate the shared venv first:
 
 ```bash
 source ~/.venv/bin/activate
 cd /Users/cherrybrayden/Documents/GitHub/qb-passion-project
 ```
 
+All API keys load automatically from `.env.local` — no `export` needed.
+
 ```bash
-python scripts/01_draft_list.py         # raw/draft/*.xls → data/raw/qbs_drafted.csv  [DONE]
-python scripts/02_nfl_passing_stats.py  # raw/passing/*.xls → data/raw/nfl_passing_all.csv  [DONE]
-python scripts/03_build_cohort.py       # draft + NFL stats → data/processed/qb_cohort.csv  [DONE]
-
-export CFBD_KEY="your_key_here"
-python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college_features.csv  [IN PROGRESS]
-
-# TODO: feature merge, regression, Tableau
+python scripts/01_draft_list.py         # raw/draft/*.xls → data/raw/qbs_drafted.csv
+python scripts/02_nfl_passing_stats.py  # raw/passing/*.xls → data/raw/nfl_passing_all.csv
+python scripts/03_filter_cohort.py      # define eligible QB set → data/processed/qb_cohort.csv
+python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college_features.csv
+python scripts/05_nfl_rushing_stats.py  # raw/rushing/*.xls → rushing cols added to qb_cohort.csv
+python scripts/06_sportradar_college.py # Sportradar API → data/raw/sportradar_profiles.json
+python scripts/07_feature_merge.py      # combine all → data/processed/qb_model_table.csv
+python scripts/08_clustering.py         # PCA + K-Means → data/processed/qb_clusters.csv
+python scripts/09_composite_score.py    # composite NFL score + recruit bias → qb_composite_scores.csv
+python scripts/10_build_sql.py          # SQLite DB → data/qb_analysis.db (5 tables, 10 example queries)
 ```
 
 ---
@@ -77,25 +99,44 @@ python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college
 ## Data Architecture
 
 ```
-data/raw/draft/*.xls          (PFR draft exports, 2008–2023, one file per year)
-    └─ 01_draft_list.py ─────► data/raw/qbs_drafted.csv
-                                    (qb_name, draft_year, round, pick, team, college)
+data/raw/draft/{year}-draft.xls
+    └─ 01_draft_list.py ──────────────────► data/raw/qbs_drafted.csv
 
-data/raw/passing/*.xls        (PFR passing stat exports, 2009–2023)
-    └─ 02_nfl_passing_stats.py ► data/raw/nfl_passing_all.csv
-                                    (Player, season, G, GS, Att, ANY/A, Rate, + advanced stats)
+data/raw/passing/{year}-advanced.xls
+data/raw/passing/{year}-standard.xls
+    └─ 02_nfl_passing_stats.py ───────────► data/raw/nfl_passing_all.csv
 
 data/raw/qbs_drafted.csv  ──┐
-data/raw/nfl_passing_all.csv ┴─► 03_build_cohort.py ──► data/processed/qb_cohort.csv
-                                                              (filtered cohort, ~50–80 QBs)
-
-[TBD] college passing stats ──► feature engineering ──► regression model ──► Tableau
+data/raw/nfl_passing_all.csv ┴─► 03_filter_cohort.py ──► data/processed/qb_cohort.csv
+                                                               (40 QBs, NFL filter only)
+                                                                       │
+                    ┌──────────────────────────────────────────────────┤
+                    ▼                          ▼                       ▼
+     04_college_stats.py          05_nfl_rushing_stats.py   06_sportradar_college.py
+  (CFBD → college_features.csv)  (rushing → qb_cohort.csv)  (sacks → sportradar_profiles.json)
+                    │                          │                       │
+                    └──────────────────────────┴───────────────────────┘
+                                               │
+                                    07_feature_merge.py
+                                               │
+                              data/processed/qb_model_table.csv
+                                    │                  │
+                       09_composite_score.py     [08] PCA + K-Means
+                       qb_composite_scores.csv   qb_clusters.csv
+                                    │
+                             [10] SQL database
+                             data/qb_analysis.db
+                                    │
+                             [11] Tableau dashboards
 ```
+
+---
 
 ## Key Implementation Details
 
-- **PFR draft files**: `sportsref_download.xls` = 2008, `sportsref_download (1).xls` = 2009, … index N = 2008+N. Multi-level HTML headers flattened in `01_draft_list.py`.
-- **PFR passing files**: `sportsref_download (16).xls` = 2023 advanced, even files 16–26 = 2023–2018 advanced (multi-level headers). Files 28–36 = 2017–2009 standard stats (single-level). Odd files (17–27) are small subsets of same year — skipped. File 37 = 2001 — skipped.
-- **Advanced vs standard stats**: Advanced files (2018–2023) have pressure %, air yards, accuracy %. Standard files (2009–2017) have ANY/A, passer rating, TD%, Int%, sack %. Both have G and GS.
-- **Cohort filters**: ≥2 college seasons as QB, ≥16 NFL games played across first two seasons.
-- **Reproducibility requirement**: All analysis must be traceable raw data → scripts → final numbers. Graders follow the full pipeline without guessing.
+- **PFR files**: named `{year}-{type}.xls` — scripts use exact names, no index mapping needed.
+- **Cohort filter** (`03_filter_cohort.py`): ≥16 NFL games, ≥8 starts, `has_advanced_stats=True`, key advanced cols non-null. Defines the QB roster — must run before scripts 04 and 06.
+- **Composite score** (`09_composite_score.py`): weighted average of 10 normalized components. Accuracy metrics (on-target %, bad throw %, completion %) upweighted 1.5–2×. pkttime, iay_per_att, and games started intentionally excluded.
+- **Sportradar team resolution**: uses dynamic team map from hierarchy endpoint (1,824 teams). Alias table in `06_sportradar_college.py` handles PFR abbreviations (e.g. "North Carolina St." → "NC State").
+- **API keys**: stored in `.env.local` (git-ignored). Scripts load it automatically at startup.
+- **Reproducibility**: all analysis traces raw data → scripts → final numbers. Graders run the pipeline from scratch — no manual steps beyond dropping XLS files in `data/raw/`.

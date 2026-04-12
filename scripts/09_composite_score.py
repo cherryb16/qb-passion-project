@@ -65,14 +65,13 @@ cohort_cols = [
 ]
 cohort_slim = cohort[[c for c in cohort_cols if c in cohort.columns]].copy()
 
-# From college: recruiting data + conference
-college_cols = [
-    "qb_name",
-    "col_conference",
-    "recruit_stars",
-    "recruit_rating",   # 247Sports composite, 0-1 scale; NaN for some QBs
-]
-college_slim = college[college_cols].copy()
+# From college: recruiting data + conference (handle missing columns gracefully)
+college_cols = ["qb_name", "col_conference", "recruit_stars", "recruit_rating"]
+college_slim = college[[c for c in college_cols if c in college.columns]].copy()
+# Add missing columns as NaN so downstream code doesn't break
+for c in college_cols:
+    if c not in college_slim.columns:
+        college_slim[c] = np.nan
 
 # Merge on qb_name (one row per QB)
 df = cohort_slim.merge(college_slim, on="qb_name", how="left")

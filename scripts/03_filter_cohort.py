@@ -1,10 +1,15 @@
 """
-Step 3: Join draft list to NFL passing stats, filter to cohort, and compute
-        base-level NFL outcome metrics for each QB's first two seasons.
+Step 3: Join draft list to NFL passing stats, filter to eligible QB cohort,
+        and compute NFL outcome metrics for each QB's first two seasons.
+
+        Defines WHO is in the study based on NFL opportunity only.
+        College stats and rushing stats are added by scripts 04-06,
+        which read this output to know which QBs to look up.
 
 Cohort filters:
   - nfl_games_played_yrs1_2 >= 16  (got a real NFL opportunity)
-  - [college filter TBD once college stats are sourced]
+  - nfl_starts >= 8
+  - has advanced stats (2018+ draft era)
 
 For each QB in the cohort, compute NFL outcomes aggregated across seasons 1-2:
   - Games played / started
