@@ -31,7 +31,13 @@
       "Bash(mv \"sportsref_download \\(1\\).xls\" \"2009-draft.xls\")",
       "Bash(mv \"sportsref_download \\(2\\).xls\" \"2010-draft.xls\")",
       "Bash(mv \"sportsref_download \\(3\\).xls\" \"2011-draft.xls\")",
-      "Bash(mv \"sportsref_download \\(4\\).xls\" \"2012-draft.xls\")"
+      "Bash(mv \"sportsref_download \\(4\\).xls\" \"2012-draft.xls\")",
+      "Bash(ls /Users/cherrybrayden/Documents/GitHub/qb-passion-project/checkpoint*.md)",
+      "Bash(python -c ':*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)"
     ]
   }
 }
