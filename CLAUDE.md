@@ -39,17 +39,17 @@ For QBs drafted 2018–2024 who played ≥16 NFL games and made ≥8 starts in t
 | `data/raw/qbs_drafted.csv` | 198 drafted QBs, 2008–2024 | Complete |
 | `data/raw/nfl_passing_all.csv` | 1,766 player-seasons, 2018–2025 | Complete |
 | `data/raw/nfl_rushing_all.csv` | 2,921 player-seasons, 2018–2025 | Complete |
-| `data/raw/sportradar_profiles.json` | Career profiles for 44 QBs | 44/44 cohort QBs |
+| `data/raw/sportradar_profiles.json` | Sportradar player profile payloads | Supplemental source |
 | `data/processed/qb_cohort.csv` | 40 QBs with full NFL stats + rushing | 40/40 all outcome cols |
-| `data/processed/qb_college_features.csv` | College stats + recruit ratings | 39/40 CFBD, 34/40 recruit ratings |
-| `data/processed/qb_model_table.csv` | 40 QBs × 48 cols, all sources merged | Ready for analysis |
+| `data/processed/qb_college_features.csv` | College stats + recruit ratings | 40 rows; 34/40 recruit ratings |
+| `data/processed/qb_model_table.csv` | 40 QBs × 43 cols, all sources merged | Ready for analysis |
 | `data/processed/qb_composite_scores.csv` | 0–100 NFL success score + recruit bias | 40/40 scored |
 | `data/processed/qb_clusters.csv` | PCA scores + K-Means cluster assignments | 40/40 |
 | `data/qb_analysis.db` | SQLite DB — 5 tables, 10 analytical queries | Complete |
 
-### Known Data Gaps (not fixable without paid API tier)
-- `col_explosiveness` and `col_sos_rating` — CFBD free tier returns null for SP+ fields
-- Recruit ratings missing for 6 QBs (Josh Allen, Bailey Zappe, Desmond Ridder, Aidan O'Connell, Mason Rudolph, Ryan Finley) — small-school QBs not tracked by 247Sports
+### Known Data Gaps
+- Expected recruiting-data nulls remain for 6 QBs: Aidan O'Connell, Bailey Zappe, Baker Mayfield, Desmond Ridder, Josh Allen, and Ryan Finley
+- Trey Lance is in the cohort but is missing key college modeling fields such as `col_cmp_pct` and `col_ppa_pass`
 
 ---
 
@@ -72,26 +72,26 @@ Tableau workbook should include at least:
 
 ## Running the Pipeline
 
-Activate the shared venv first:
+Use the local `uv` environment:
 
 ```bash
-source ~/.venv/bin/activate
 cd /Users/cherrybrayden/Documents/GitHub/qb-passion-project
+uv sync
 ```
 
 All API keys load automatically from `.env.local` — no `export` needed.
 
 ```bash
-python scripts/01_draft_list.py         # raw/draft/*.xls → data/raw/qbs_drafted.csv
-python scripts/02_nfl_passing_stats.py  # raw/passing/*.xls → data/raw/nfl_passing_all.csv
-python scripts/03_filter_cohort.py      # define eligible QB set → data/processed/qb_cohort.csv
-python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college_features.csv
-python scripts/05_nfl_rushing_stats.py  # raw/rushing/*.xls → rushing cols added to qb_cohort.csv
-python scripts/06_sportradar_college.py # Sportradar API → data/raw/sportradar_profiles.json
-python scripts/07_feature_merge.py      # combine all → data/processed/qb_model_table.csv
-python scripts/08_clustering.py         # PCA + K-Means → data/processed/qb_clusters.csv
-python scripts/09_composite_score.py    # composite NFL score + recruit bias → qb_composite_scores.csv
-python scripts/10_build_sql.py          # SQLite DB → data/qb_analysis.db (5 tables, 10 example queries)
+uv run python scripts/01_draft_list.py         # raw/draft/*.xls → data/raw/qbs_drafted.csv
+uv run python scripts/02_nfl_passing_stats.py  # raw/passing/*.xls → data/raw/nfl_passing_all.csv
+uv run python scripts/03_filter_cohort.py      # define eligible QB set → data/processed/qb_cohort.csv
+uv run python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college_features.csv
+uv run python scripts/05_nfl_rushing_stats.py  # raw/rushing/*.xls → rushing cols added to qb_cohort.csv
+uv run python scripts/06_sportradar_college.py # Sportradar API → data/raw/sportradar_profiles.json
+uv run python scripts/07_feature_merge.py      # combine all → data/processed/qb_model_table.csv
+uv run python scripts/08_clustering.py         # PCA + K-Means → data/processed/qb_clusters.csv
+uv run python scripts/09_composite_score.py    # composite NFL score + recruit bias → qb_composite_scores.csv
+uv run python scripts/10_build_sql.py          # SQLite DB → data/qb_analysis.db (5 tables, 10 example queries)
 ```
 
 ---

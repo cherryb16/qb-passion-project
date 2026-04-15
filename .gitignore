@@ -7,6 +7,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+.uv-cache/
 *.egg-info/
 
 # Data (large files — keep raw source XLS out of git)

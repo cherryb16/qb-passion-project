@@ -49,7 +49,25 @@ def main():
     # -----------------------------------------------------------------------
     # Prep feature matrix
     # -----------------------------------------------------------------------
-    X_raw = model[FEATURES].copy()
+    available_features = [feature for feature in FEATURES if feature in model.columns]
+    dropped_features = [
+        feature for feature in available_features
+        if model[feature].dropna().empty
+    ]
+    clustering_features = [
+        feature for feature in available_features
+        if feature not in dropped_features
+    ]
+
+    if not clustering_features:
+        raise ValueError("No non-null clustering features are available.")
+
+    if dropped_features:
+        print("Dropping all-null clustering features:")
+        for feature in dropped_features:
+            print(f"  - {feature}")
+
+    X_raw = model[clustering_features].copy()
     imputer = SimpleImputer(strategy="median")
     X = imputer.fit_transform(X_raw)
     scaler = StandardScaler()
@@ -68,7 +86,7 @@ def main():
 
     loadings = pd.DataFrame(
         pca.components_.T,
-        index=FEATURES,
+        index=clustering_features,
         columns=[f"PC{i+1}" for i in range(3)]
     )
     print("\nPC1 — Passing Efficiency axis (top drivers):")

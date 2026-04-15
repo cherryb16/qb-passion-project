@@ -7,9 +7,8 @@ Step 4: Pull college stats for cohort QBs from College Football Data API.
 Endpoints used per season year (one call each = very efficient):
   /stats/player/season   — traditional passing + rushing stats
   /ppa/players/season    — PPA (Predicted Points Added) per play
-  /player/usage          — usage rates by down, explosiveness
+  /player/usage          — usage rates by down
   /records               — team win/loss records per season
-  /ratings/sp            — SP+ strength of schedule per season
 
 Features engineered per QB (last 2 college seasons combined):
   Traditional:
@@ -18,11 +17,9 @@ Features engineered per QB (last 2 college seasons combined):
   Advanced:
     ppa_overall, ppa_pass, ppa_rush (avg predicted pts added per play)
     usage_overall, usage_passing, usage_third_down
-    col_explosiveness (avg PPA on successful plays)
     pass_td_pct, first_down_pct
   Team context:
     col_team_win_pct (avg team win % across last 2 seasons)
-    col_sos_rating (avg SP+ strength of schedule across last 2 seasons)
 
 Input:  data/processed/qb_cohort.csv
 Output: data/raw/cfbd_raw_stats.json   (raw API responses, cached)
@@ -177,7 +174,7 @@ def fetch_all_seasons(years: list[int]) -> dict:
             print(f"    ppa ERROR: {e}")
             year_cache["ppa"] = []
 
-        # 4. Player usage (down-by-down, explosiveness)
+        # 4. Player usage (down-by-down)
         try:
             year_cache["usage"] = cfbd_get(
                 "player/usage",
@@ -294,7 +291,6 @@ def extract_usage(name: str, year_data: dict) -> dict:
         "usage_first_down":  u.get("firstDown"),
         "usage_second_down": u.get("secondDown"),
         "usage_third_down":  u.get("thirdDown"),
-        "explosiveness":     row.get("explosiveness"),
         "conference":        row.get("conference"),
         "team":              row.get("team"),
     }
@@ -318,24 +314,6 @@ def fetch_team_record(team: str, year: int) -> dict | None:
             return {"win_pct": round(wins / games, 4)}
     except Exception as e:
         print(f"    team_record ERROR ({team} {year}): {e}")
-    return None
-
-
-def fetch_sp_ratings(team: str, year: int) -> dict | None:
-    """
-    Fetch SP+ ratings for a team in a given year from CFBD /ratings/sp.
-    Returns dict with sos_rating or None on failure.
-    """
-    try:
-        data = cfbd_get("ratings/sp", {"year": year, "team": team})
-        if not data:
-            return None
-        row = data[0] if isinstance(data, list) else data
-        sos = row.get("strengthOfSchedule")
-        if sos is not None:
-            return {"sos_rating": float(sos)}
-    except Exception as e:
-        print(f"    sp_ratings ERROR ({team} {year}): {e}")
     return None
 
 
@@ -423,7 +401,7 @@ def aggregate_college(season_dicts: list[dict]) -> dict:
     for key in ["ppa_overall", "ppa_pass", "ppa_rush",
                 "usage_overall", "usage_pass", "usage_rush",
                 "usage_first_down", "usage_second_down", "usage_third_down",
-                "explosiveness", "team_win_pct", "sos_rating"]:
+                "team_win_pct"]:
         vals = [s.get(key) for s in season_dicts]
         out[f"col_{key}"] = safe_avg(vals)
 
@@ -482,21 +460,17 @@ def main():
 
             merged = {**passing, **rushing, **ppa, **usage}
 
-            # Fetch team record and SP+ SOS for the season
+            # Fetch team win rate for the season
             col_team = usage.get("team")
             if col_team:
                 rec = fetch_team_record(col_team, int(yr))
                 if rec:
                     merged["team_win_pct"] = rec["win_pct"]
-                sp = fetch_sp_ratings(col_team, int(yr))
-                if sp:
-                    merged["sos_rating"] = sp["sos_rating"]
 
             found = bool(passing or ppa or usage)
             print(f"  {yr}: {'found' if found else 'NOT FOUND'} — "
                   f"att={passing.get('att')}, cmp%={passing.get('pct')}, "
-                  f"ppa={ppa.get('ppa_overall')}, expl={usage.get('explosiveness')}, "
-                  f"win_pct={merged.get('team_win_pct')}, sos={merged.get('sos_rating')}")
+                  f"ppa={ppa.get('ppa_overall')}, win_pct={merged.get('team_win_pct')}")
             season_features.append(merged)
 
         agg = aggregate_college(season_features)

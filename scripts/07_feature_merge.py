@@ -100,12 +100,11 @@ def main():
         "col_rush_yds_per_att",
         # PPA (Predicted Points Added)
         "col_ppa_overall", "col_ppa_pass", "col_ppa_rush",
-        # Usage & explosiveness
+        # Usage
         "col_usage_overall", "col_usage_pass", "col_usage_rush",
         "col_usage_first_down", "col_usage_second_down", "col_usage_third_down",
-        "col_explosiveness",
         # Team context
-        "col_team_win_pct", "col_sos_rating",
+        "col_team_win_pct",
         # Recruiting
         "recruit_rating", "recruit_stars",
         # Meta

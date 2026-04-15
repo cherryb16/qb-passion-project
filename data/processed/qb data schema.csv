@@ -78,7 +78,6 @@ col_usage_rush,"model, college",college_advanced,Rush usage rate — share of te
 col_usage_first_down,"model, college",college_advanced,Usage rate on first down plays,College Football Data API
 col_usage_second_down,"model, college",college_advanced,Usage rate on second down plays,College Football Data API
 col_usage_third_down,"model, college",college_advanced,Usage rate on third down plays,College Football Data API
-col_explosiveness,college,college_advanced,Average explosiveness — measures how often plays generate big gains relative to expected,College Football Data API
 col_conference,college,college_meta,"Conference the player's college team belonged to (e.g. SEC, B1G, ACC)",College Football Data API
 col_team,college,college_meta,College team name,College Football Data API
 col_seasons_found,college,college_meta,Number of college seasons with data found,Data collection

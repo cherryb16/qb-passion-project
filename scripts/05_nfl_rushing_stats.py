@@ -134,7 +134,12 @@ def main():
         results.append(row)
 
     rush_df = pd.DataFrame(results)
-    cohort_updated = cohort.drop(columns=["_name"]).merge(
+    existing_rush_cols = [
+        c for c in cohort.columns
+        if c.startswith("nfl_rush_") or c in {"nfl_rush_yds_per_att", "nfl_rush_seasons_found"}
+    ]
+    cohort_base = cohort.drop(columns=["_name"] + existing_rush_cols, errors="ignore")
+    cohort_updated = cohort_base.merge(
         rush_df.drop(columns=["draft_year"]), on="qb_name", how="left"
     )
 

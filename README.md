@@ -4,6 +4,24 @@
 
 ---
 
+## Index
+
+- [Overview](#overview)
+- [Cohort](#cohort)
+- [Data Sources](#data-sources)
+- [Setup](#setup)
+- [Environment Management](#environment-management)
+- [Running the Pipeline](#running-the-pipeline)
+- [Output Files](#output-files)
+- [SQL Database](#sql-database)
+- [Composite Score Methodology](#composite-score-methodology)
+- [QB Archetypes (K-Means Clusters)](#qb-archetypes-k-means-clusters)
+- [Known Data Gaps](#known-data-gaps)
+- [Tableau Dashboards](#tableau-dashboards)
+- [Project Structure](#project-structure)
+
+---
+
 ## Overview
 
 For every QB drafted 2018–2024 who played at least 16 NFL games and made at least 8 starts in their first two seasons, this project builds a composite NFL success score (0–100) and identifies which college traits best predict it.
@@ -40,22 +58,45 @@ For every QB drafted 2018–2024 who played at least 16 NFL games and made at le
 ## Setup
 
 ```bash
-# 1. Clone the repo and activate the shared virtual environment
-source ~/.venv/bin/activate
+# 1. Clone the repo and enter it
 cd /path/to/qb-passion-project
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. Sync the local uv-managed environment
+uv sync
 
-# 3. Add API keys and MySQL credentials to .env.local
+# 3. Add API keys to `.env.local`
 #    (file is git-ignored — never commit it)
 #    CFBD_KEY=...
 #    SPORTRADAR_KEY=...
-#    MYSQL_HOST=localhost
-#    MYSQL_USER=root
-#    MYSQL_PASSWORD=...
-#    MYSQL_DATABASE=qb_analysis
 ```
+
+---
+
+## Environment Management
+
+This repo now uses `uv` as the default Python environment manager.
+
+Common commands:
+
+```bash
+# Create/update the local .venv from pyproject.toml
+uv sync
+
+# Run Python in the project environment
+uv run python --version
+
+# Add a dependency
+uv add <package>
+
+# Add a dev-only dependency
+uv add --dev <package>
+```
+
+Notes:
+- `uv sync` creates and maintains a local `.venv/` in the repo.
+- `uv` uses a project-local cache at `.uv-cache/`, so this repo does not depend on `~/.cache/uv`.
+- `pyproject.toml` is the source of truth for Python dependencies.
+- `requirements.txt` is still present for compatibility, but `uv` should be the default workflow going forward.
 
 ---
 
@@ -65,16 +106,16 @@ Scripts must be run in order from the project root. Each script reads from
 the previous script's output.
 
 ```bash
-python scripts/01_draft_list.py        # raw/draft/*.xls  → data/raw/qbs_drafted.csv
-python scripts/02_nfl_passing_stats.py # raw/passing/*.xls → data/raw/nfl_passing_all.csv
-python scripts/03_filter_cohort.py     # define eligible QB set → data/processed/qb_cohort.csv
-python scripts/04_college_stats.py     # CFBD API → data/processed/qb_college_features.csv
-python scripts/05_nfl_rushing_stats.py # raw/rushing/*.xls → rushing cols added to qb_cohort.csv
-python scripts/06_sportradar_college.py# Sportradar API → data/raw/sportradar_profiles.json
-python scripts/07_feature_merge.py     # combine all → data/processed/qb_model_table.csv
-python scripts/08_clustering.py        # PCA + K-Means → data/processed/qb_clusters.csv
-python scripts/09_composite_score.py   # composite NFL score + recruit bias → qb_composite_scores.csv
-python scripts/10_build_sql.py         # load CSVs into MySQL → runs 10 analytical queries
+uv run python scripts/01_draft_list.py         # raw/draft/*.xls  → data/raw/qbs_drafted.csv
+uv run python scripts/02_nfl_passing_stats.py  # raw/passing/*.xls → data/raw/nfl_passing_all.csv
+uv run python scripts/03_filter_cohort.py      # define eligible QB set → data/processed/qb_cohort.csv
+uv run python scripts/04_college_stats.py      # CFBD API → data/processed/qb_college_features.csv
+uv run python scripts/05_nfl_rushing_stats.py  # raw/rushing/*.xls → rushing cols added to qb_cohort.csv
+uv run python scripts/06_sportradar_college.py # Sportradar API → data/raw/sportradar_profiles.json
+uv run python scripts/07_feature_merge.py      # combine all → data/processed/qb_model_table.csv
+uv run python scripts/08_clustering.py         # PCA + K-Means → data/processed/qb_clusters.csv
+uv run python scripts/09_composite_score.py    # composite NFL score + recruit bias → qb_composite_scores.csv
+uv run python scripts/10_build_sql.py          # load CSVs into SQLite → runs 10 analytical queries
 ```
 
 ---
@@ -86,10 +127,10 @@ python scripts/10_build_sql.py         # load CSVs into MySQL → runs 10 analyt
 | `data/raw/qbs_drafted.csv` | 198 drafted QBs, 2008–2024 | Complete |
 | `data/raw/nfl_passing_all.csv` | 1,766 player-seasons, 2018–2025 | Complete |
 | `data/raw/nfl_rushing_all.csv` | 2,921 player-seasons, 2018–2025 | Complete |
-| `data/raw/sportradar_profiles.json` | Career profiles for 44 QBs | 44/44 cohort QBs |
+| `data/raw/sportradar_profiles.json` | Sportradar player profile payloads | Supplemental source |
 | `data/processed/qb_cohort.csv` | 40 QBs with full NFL stats + rushing | 40/40 |
-| `data/processed/qb_college_features.csv` | College stats + recruit ratings | 39/40 CFBD, 34/40 recruit ratings |
-| `data/processed/qb_model_table.csv` | 40 QBs × 48 cols, all sources merged | Ready for analysis |
+| `data/processed/qb_college_features.csv` | College stats + recruit ratings | 40 rows; 34/40 recruit ratings |
+| `data/processed/qb_model_table.csv` | 40 QBs × 43 cols, all sources merged | Ready for analysis |
 | `data/processed/qb_composite_scores.csv` | 0–100 NFL success score + recruit bias | 40/40 |
 | `data/processed/qb_clusters.csv` | PCA scores + K-Means cluster assignments | 40/40 |
 
@@ -97,7 +138,7 @@ python scripts/10_build_sql.py         # load CSVs into MySQL → runs 10 analyt
 
 ## SQL Database
 
-The MySQL database (`qb_analysis`) contains 5 tables and 10 pre-written analytical queries.
+The SQLite database (`data/qb_analysis.db`) contains 5 tables and 10 pre-written analytical queries.
 
 **Tables:**
 
@@ -106,7 +147,7 @@ The MySQL database (`qb_analysis`) contains 5 tables and 10 pre-written analytic
 | `qb_cohort` | NFL stats + identifiers for all 40 cohort QBs |
 | `college_features` | College stats + recruiting data per QB |
 | `composite_scores` | 0–100 NFL success score, recruit bias |
-| `model_table` | Merged 48-column feature table used for modeling |
+| `model_table` | Merged 43-column feature table used for modeling |
 | `qb_clusters` | PCA scores + K-Means cluster assignments |
 
 **Running the SQL:**
@@ -164,16 +205,16 @@ Four archetypes identified via PCA + K-Means on college features:
 | Cluster | Description |
 |---|---|
 | Elite Multi-Dimensional | High PPA, high completion %, strong rushing — best overall college producers |
-| Pocket Specialist | High completion %, low rushing — pure passers |
-| Athletic Scrambler | High rush yards/att, lower passing efficiency |
-| Developmental | Lower across the board — raw prospects |
+| Efficient Passers | High completion %, strong passing efficiency, modest rushing |
+| Raw Dual-Threats | Higher rushing profile with less refined passing efficiency |
+| Pure Pocket Passers | Lower-rush archetype built around traditional pocket play |
 
 ---
 
 ## Known Data Gaps
 
-- `col_explosiveness` and `col_sos_rating` — CFBD free tier returns null for SP+ fields
-- Recruit ratings missing for 6 QBs (Josh Allen, Bailey Zappe, Desmond Ridder, Aidan O'Connell, Mason Rudolph, Ryan Finley) — small-school QBs not tracked by 247Sports
+- Expected recruiting-data nulls remain for 6 QBs: Aidan O'Connell, Bailey Zappe, Baker Mayfield, Desmond Ridder, Josh Allen, and Ryan Finley
+- Trey Lance is in the cohort but is missing key college modeling fields such as `col_cmp_pct` and `col_ppa_pass`
 
 ---
 
@@ -219,8 +260,8 @@ qb-passion-project/
 │   ├── 08_clustering.py
 │   ├── 09_composite_score.py
 │   ├── 10_build_sql.py     ← CSV loader (Python)
-│   └── 10_build_sql.sql    ← schema + analytical queries (MySQL)
-├── .env.local              (git-ignored — API keys + DB credentials)
+│   └── 10_build_sql.sql    ← SQLite analytical queries
+├── .env.local              (git-ignored — API keys)
 ├── requirements.txt
 └── README.md
 ```
