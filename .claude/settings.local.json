@@ -38,7 +38,22 @@
       "Bash(git rm:*)",
       "Bash(git commit -m ':*)",
       "Bash(git push:*)",
-      "Bash(uv run *)"
+      "Bash(uv run *)",
+      "Bash(npm --version)",
+      "Bash(npx --yes create-next-app@latest portfolio-next --typescript --tailwind --app --src-dir --no-turbopack --import-alias \"@/*\" --eslint --use-npm --yes)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p /Users/cherrybrayden/GitHub/portfolio-next/public/data/qb)",
+      "Bash(cp /Users/cherrybrayden/GitHub/qb-passion-project/data/processed/qb_composite_scores.csv /Users/cherrybrayden/GitHub/qb-passion-project/data/processed/qb_clusters.csv /Users/cherrybrayden/GitHub/qb-passion-project/data/processed/qb_model_table.csv /Users/cherrybrayden/GitHub/portfolio-next/public/data/qb/)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code} %{size_download}b\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /tmp/qb.html -w \"HTTP %{http_code} %{size_download}b\\\\n\" http://localhost:3000/qb-translation)",
+      "Read(//Applications/**)",
+      "Bash(mdfind -onlyin /Applications \"kMDItemCFBundleIdentifier == 'com.google.Chrome'\")",
+      "Bash(mkdir -p /tmp/portfolio-shots)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,1800 --screenshot=/tmp/portfolio-shots/home.png http://localhost:3000/)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,2400 --screenshot=/tmp/portfolio-shots/qb.png http://localhost:3000/qb-translation)",
+      "Bash(curl -s http://localhost:3000/qb-translation)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,2400 --virtual-time-budget=3000 --screenshot=/tmp/portfolio-shots/qb2.png http://localhost:3000/qb-translation)"
     ]
   },
   "disabledMcpjsonServers": [
